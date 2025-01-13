@@ -677,11 +677,6 @@
 //   read the code)
 
 
-//                                    --------------  QNPM  --------------
-// * node package manager node.js ke liye ek package manager h jisme javascript ki libraries hoti h jese
-//   react(npm is a package manager for node.js that contains javascript libraries such as react)
-
-
 //                                --------------  QREACTROUTERDOM  --------------
 // * ye ek npm package h jisse react application m routing krte h(This is a npm package through which we can
 //   do routing in react application)
@@ -731,9 +726,63 @@
 // * node.js single threaded hota h(node.js is a single threaded)
 
 
+//                                   --------------  QSERVER  --------------
+// * nodejs m server ek program hota h jo ki client ki request ko handle krta h or data ko process krke
+//   response send karta h(in nodejs the server is a program that handles the client's request and processes
+//   the data and sends the response)
+
+
+//                                   --------------  QV8ENGINE  --------------
+// * ye ek javascript engine hota h jo google chrome m bhi use hota h(it is a javascript engine that is also
+//   used in google chrome)
+// * ye javascript code ko machine language m compile krta h(it compiles JavaScript code into machine language)
+
+
+//                                    --------------  QNPM  --------------
+// * node package manager node.js ke liye ek package manager h (npm is a package manager for node.js)
+// * npm project ki dependencies ko download, update or manage krta h(npm downloads, update and manage the
+//   dependecie of project)
+// * npm install command - un sabhi packages ko install karta h jo as a dependencies package.json file m show
+//   hote h(its install all packeges who show in package.json file as a dependencies)
+// * npm install package_name - ek specific package ko install karta h(its install a specific package)
+// * npm update command - sabhi packages ko unke newer version m update krta h(its update all packages to their
+//   latest versions)
+// * npm update package_name - ek specific package ko update karta h(its update a specific package)
+// * npm install package_name@version - ek specific version ke package ko install karta h(Installs a specific
+//   version of a package)
+
+
 //                                 --------------  QRUNTIMEENVIRONMENT  --------------
-// * runtime enviroment ek enviroment hota h jisme kisi program ko execute kiya jata h(runtime environment is
-//   the environment in which a program is executed)
+// * runtime enviroment ek enviroment hota h jisme js ko web browser ke bhar execute kiya jata h(runtime 
+//   environment is the environment in which JS is executed outside the web browser)
+// * js program ko run krne ke liye is enviroment m sabhi tools, libreries or baki infrastrucure hote h(this 
+//   environment contains all the tools, libraries, and other infrastructure needed to run a js program)
+
+
+//                                 --------------  QDEPENDENCIES  --------------
+// * dependencies external package hote h jinki need project ke production m hoti h(dependencies are external
+//   packages that it needs in the production of the project)
+// * dependencies npm ke through manage hoti h(dependencies manage by npm)
+
+
+//                                 --------------  QDEVDEPENDENCIES  --------------
+// * devdependencies package hote h jinka use development or testing m hota h(DevDependencies are packages that
+//   it needs during development and testing)
+
+
+//                                    --------------  QPACKAGE  --------------
+// * package ek folder tree hota h jisme package.json file or or bhi kae files, folders hote h(A package is a
+//   folder tree containing the package.json file and several other files and folders)
+// * package ko npm ke thorugh install krte h(we can installs the package through npm)
+
+
+//                                 --------------  QPACKAGE.JSON  --------------
+// * ye configuration file hoti h jisme project ki information hoti h jese project name, version, description,
+//   dependencies, scripts(it is a configuration file that contains information about the project like project's
+//   name, version, description, dependencies, scripts)
+// * script - ye custom command ko defined karti h(This defines a custom command)
+// * custom command ko execute krne ke liye npm run script_name enter karte h(To execute the custom command,
+//   enter npm run script_name)
 
 
 // * node ke project ko create krne ke liye npm init(initializer) command run krte h(for create node project 
@@ -741,6 +790,8 @@
 // * npm init -y - node ke project ko create krne ke liye with auto detail of project like name, version,
 //   description etc..(for create node project with auto detail of project like name, version, etc..)
 // * npm init command se package.json file create hoti h(we create package.json file with npm init command)
+
+
 // * node ki js m browser ki js ke kuch features nhi hote jese dom etc..(Node's js does not have some of the
 //   features that a browser's js has, such as dom etc..)
 // * browser ki js m node ki js ke kuch features nhi hote jese file handling etc..(browser's js does not have
@@ -749,29 +800,41 @@
 //   - node filename)
 
 
-//                                 --------------  QPACKAGE.JS  --------------
-// * ye ek json file hoti h jisme project ki information hoti h jese project name, version, description,
-//   dependencies, scripts(it is a json file that contains information about the project like project's name,
-//   version, description, dependencies, scripts)
-// * script - isse kisi command ki script change kr skte h(we can change script of command with this)
-// * dependencies - ye packages hote h jinhe hm install krte h(These are the packages that we install)
+// * file location m ./ same directory ko or ../ kisi folder se bhar akar same directory ko represent krta h
+//   (in file location ./ same directory and ../ represent same directory outside of folder)
 
 
-// * file location m ./ same directry ko or ../ kisi folder se bhar akar same directry ko represent krta h
-//   (in file location ./ same directry and ../ represent same directry outside of folder)
+//                                   --------------  QREQUIRE  --------------
+// * ye ek built-in function hota h jiska use module, file ko include/import krne ke liye krte h(it is a
+//   built-in function that is used to include/import the module, file)
+// * is function ke andr as string module ka name, module/file ka path diya jata h(inside this function the
+//   model name, path of the model/file is passed as a string)
+// * ye synchronous hota h jo current module ko load hone tak file ko execute nahi karta h(it is synchronous it
+//   does not execute the file until the current model is loaded)
+
+
+// * module.exports/exports se variables, functions, objects etc ko dusri file m use krne ke liye expose krte h
+//   (expose variables, functions, objects etc for use in other files with the help of model.exports/exports)
+
+
+//                            --------------  QMODULERPROGRAMMING  --------------
+// * badi application ko kae modules m divide krke create kiya jata h(Large applications are built by splitting
+//   them into multiple models)
 
 
 //                                   --------------  QMODULE  --------------
-// * module code hote h jinko hm require se kisi file m call krte h(module is code that we can call in file
-//   with help of require)
-// * js file ko bhi module khte h(js file is also called module)
-// * two type of module - 1. built-in module - inhe alag se install nhi krte(Do not install them separately)
-//   2. third-party module - inhe alag se install krte h(we install them separately)
+// * modules reusable code ya file hote h(modules are reusable code or file)
+// * module package ka part ho sakte h(a module can be part of a package)
+// * type of module - 1. core module 2. local module 3. third-party module
+//   1. ye built-in modules hote h jo nodejs ke sath aate h jese fs, http etc(these are built-in modules that
+//      come with Node.js like fs, http etc)
+//   2. in modules ko khudse create kiya jata h(these models are made by overselves)
+//   3. inhe alag se install krte h(we install them separately)
 
 
 //                                  --------------  QFSMODULE  --------------
-// * ye ek built-in module hota h jisse node.js m file system access kr skte h(it is a built-in module which 
-//   we use to access file system in node.js)
+// * ye ek built-in module hota h jisse node.js m file system se interact kr skte h(it is a built-in module  
+//   which we use to interact with file system in node.js)
 // * isse file write, read, update, delete etc.. kr skte h(it allow you to write, read, update, delete etc..
 //   file)
 // * isse file system ki information get kr skte h(it allow you to get information of file system)
@@ -783,23 +846,162 @@
 // * is module se server create krte h(create server from this module)
 
 
-//                                   --------------  QREQUIRE  --------------
-// * require ka use js module, external file ko include/import krne ke liye krte h(it is use for include/
-//   import js module, external file in node project)
+//                                --------------  QMODULESYSTEMS  --------------
+// * 1. CJS/CommonJS 2. ES Modules/ECMAScript Modules
+// * 1. ye purana module system h module ko import or export krne ka(it is a old module system for import and
+//      export modules)
+// *    isme module ko require se import or module.exports/exports se export kiya jata h(in this the model is
+//      imported from require and exported from module.exports/exports)
+// *    isme module synchronous load hota h(it loads module synchronously)
+// * 2. ye module system js ke es6 version m introduce hua h(this module system is introduced in es6 version of
+//      js)
+// *    isme module ko import se import or exports se export kiya jata h(in this the model is imported from
+//      require and exported from export)
+// *    isme module asynchronous load hota h(it loads module asynchronously)
+
+
+//                                --------------  QNODEJSARCHITECTURE  --------------
+// * sbse phle client frontend pe request krta h jo request nodejs m event queue m store hoti h fir nodejs m 
+//   event loop hota h jo un request ko accept krke check krta h ki request blocking/syncronus h ya
+//   non-blocking agr request non-blocking hoti h to event loop us request ko aage process kr deta h pr agr 
+//   request blocking hoti h to us request ko thread pool m forword kiya jata h thread pool m threads hote h
+//   jo non-blocking request ko process krte h(the client makes a request to the frontend the request is stored
+//   in the event queue in nodejs, then nodejs has an event loop which accepts the request and checks whether
+//   the request is blocking or non-blocking, if the request is non-blocking then the event loop processes the
+//   request further and if the request is blocking then the event loop forwards the request to the thread pool
+//   which contains threads that process blocking requests)
+
+
+//                                    --------------  QBLOCKING  --------------
+// * blocking operation m current task complete hone ke baad hi aage ki code execute hoti h(in blocking
+//   operation, further code is executed only after the current task is completed)
+
+
+//                                  --------------  QNONBLOCKING  --------------
+// * non-blocking operation m current task ke complete hone ka wait nahi hota or aage ki code execute ho jati h
+//   (in non-blocking operation, there is no wait for the current task to complete and further code gets 
+//   executed)
+// * non-blocking operation m async/await, promise, callback ka use kiya jata h(async/await, promise, callback
+//   are used in non-blocking operations)
+
+
+//                                   --------------  QSYNCHRONOUS  --------------
+// * isme sbhi operations ek ke baad ek execute hote h ek operation complete hone ke baad hi dusra operation
+//   start hota h(in this all the operations are executed one after the other and the next operation starts 
+//   only after the completion of the first operation)
+
+
+//                                  --------------  QASYNCHRONOUS  --------------
+// * isme operation independaly perform hote h mtlb iske baad ka operation pahle wale operation ke compelete
+//   hone ka wait nahi karta or execute ho jata h(in this the operations are performed independently, meaning
+//   the subsequent operation does not wait for the completion of the previous operation and gets executed)
+// * asynchronous operation m async/await, promise, callback ka use kiya jata h(async/await, promise, callback
+//   are used in asynchronous operations)
+
+
+//                                      --------------  QURL  --------------
+// * uniform resource locator internet pr deploy resource ka ek unique address hota h(url is a unique address
+//   of a deployed resource on the Internet)
+// * https://www.websitename.com/home/class?id1=p1&id2=p2(protocol/hostname/path?queryparameters)
+// * http - hypertext transfer protocol
+// * https - hypertext transfer protocol secure
+// * www.websitename.com - domain name
+// * /home - path
+// * /home/class - nested path
+// * ?id=p1 - query parameters
+// * protocol - protocol set of rules hote h jo specifie krta h ki browser or server ke bich kese communicate 
+//   krna h(protocol is a set of rules which specifie how to communicate between browser and server)
+//   between browser and server
+// * domain - user friendly name of ip address
+// * query parameters - ye key-value ke pair m additional information hoti h jise hm url m add krte h(this is 
+//   additional information in key-value pair that we add to the url)
+
+
+//                                  --------------  QHTTPMETHODS  --------------
+// * ye request ke types hote h jo resources pr kya action perform krna h use indicate krte h(These are types
+//   of requests that indicate what action is to be performed on the resources)
+// * types of http methods - GET, POST, PUT, DELETE, PATCH
+// * GET - for fetch data from the server
+// * POST - for create data to the server
+// * PUT - for update an exsisting data on the server
+// * DELETE - for remove data from the server
+// * PATCH - for partial update
+
+
+//                                  --------------  QHTTPHEADER  --------------
+// * http header key-value pairs hote h jo ki additional information provide krte h jese transfer kiye jana
+//   vale content ka type, authentication detail(HTTP headers are key-value pairs that provide additional 
+//   information such as the type of content to be transferred, authentication details, etc.)
 
 
 //                                   --------------  QEXPRESS  --------------
-// * express is a framework of node.js
+// * express is a framework for node.js
 
 
 //                              --------------  QMIDDLEWAREFUNCTION  --------------
-// * ye ek function hota h jisme req, res, next parameter hote h(it is a function that accept req, res, next
-//   parameter)
-// * next() - ye ek function h jo request ko age forward krta h(this is a function that forwards the request)
+// * ye ek function hota h jiske pass request object, response object, next middleware function ka access hota
+//   h(it is a function that has access to the request object, response object, next middleware function)
+// * is function m req, res, next parameter hote h(this function has req, res, next parameters)
+// * next() - ye ek function hota h jo request ko age forward krta h(this is a function that forwards the 
+//   request)
+// * agr next function call na ho to request-response cycle end ho jati h(the request-response cycle ends if 
+//   the next function is not called)
 // * request phle middleware function m aati h phir middleware function m condition dete h jiske bases pr
-//   response dete h(The request first comes to the middleware function and then a condition is given to the
-//   middleware function on the basis of which the response is given)
+//   request-response cycle ko continue ya end kiya jata h(the request first comes to the middleware function
+//   and then a condition is given to the middleware function on the basis of which the request-response cycle
+//   is continue or end)
 // * authentication m iska use krte h(we use it in authentication)
+
+
+//                                --------------  QMVCPATTERN  --------------
+// * model view controller ek pattern hota h jisse ham nodejs ki code ko organize tarike se rakhte h(model 
+//   view controller is a pattern through which we keep the code of nodejs in an organized manner)
+// * isse applicaton ko read or maintain krna easy hota h(this makes applications easier to read and maintain)
+
+
+//                                   --------------  QSSR  --------------
+// * server side rendering ek web development technique hoti h jisme html page ko server pr generate krke
+//   browser pr send krte h(server side rendering is a web development technique in which HTML pages are 
+//   generated on the server and sent to the browser)
+
+
+//                                   --------------  QEJS  --------------
+// * embedded javascript ek template engine hota h(embedded javascript is a template engine)
+// * isse server pr html ko generate krte h(this generates HTML on the server)
+// * isse html m js ko add kr skte h(with this you can add js to html)
+
+
+//                                --------------  QAUTHNETICATION  --------------
+// * authentication ek process hota h jisme user ki identify ko verify karte h(authentication is a process
+//   in which verify user's identity)
+
+
+//                             --------------  QAUTHNETICATIONPATTERNS  --------------
+// * statefull, stateless
+// * statefull - is authentication method m server pr session maintain kiya jata h or browser m cookie m
+//   session id ko store kiya jata h jise authentication ke liye use kiya jata h is method ko session-based
+//   authentication bhi kahte h(in this authentication method, the session is maintained on the server and the
+//   session ID is stored in a cookie in the browser which is used for authentication. This method is also 
+//   called session-based authentication)
+// * stateless - is authentication method m server pr koi session maintain nahi kiya jata isme user ko
+//   authenticate krne ke liye token ka use kiya jata h is method ko token-based authentication bhi kahte h(In
+//   this authentication method, no session is maintained on the server. In this, token is used to authenticate
+//   the user. This method is also called token-based authentication)
+
+
+//                                --------------  QAUTHORIZATION  --------------
+// * authorization user ki identity ya role ke bases pr user ke liye resources, actions, services access ya
+//   denying krne ka ek process hota h(Authorizations are the process of granting or accessing resources, 
+//   actions, or services to a user based on the user's identity or role)
+// * isme sirf permission vale user hi resources ko access ya kuch specific action ko perform kr skte h(In this,
+//   only users with permission can access resources or perform some specific actions)
+
+
+// * authorization se pahle authentication ke through user ki identity verify hoti h(User's identity is 
+//   verified through authentication before authorization)
+// * authentication m user ki identity verify krne ke baad authorization m user ko kon konse access h determine
+//   krte h(After verifying the user's identity in authentication, authorization determines what access the 
+//   user has)
 
 
 
