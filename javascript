@@ -2,7 +2,10 @@
 // * two type of javascript - vanilla js,advance js
 // * vanilla js - it is a client side language use for develop frontend part of web application
 // * advance js - it is a server side language use for develop backend part of web application
-// * JavaScript is the world's most popular programming language
+// * javaScript is the world's most popular programming language used in web development
+// * javaScript is used both in the frontend and backend
+// * JavaScript is used to create logic in the frontend and interact with the user
+// * JavaScript is used to develop backend part of web application in node.js
 // * javascript is single-threaded
 // * javascript is synchronous by default but supports asynchronous programming through the event loop, 
 //   callbacks, promises, and async/await
@@ -12,6 +15,19 @@
 //   .js extension which is linked to in the head or body element of the HTML)
 // * external javascript ko reuse kiya ja sakta h(external JavaScript can be reused)
 // * external javascript se code more readable ho jaati h(external JavaScript makes the code more readable)
+
+
+//                             --------------  QRESERVEDKEYWORD  --------------
+// * reserved keywords words hote h jinki prefined meaning hoti h(reserved keywords are words that have a 
+//   predefined meaning)
+// * reserved keywords ka use as a identifier jese variable name, function name etc. nahi kiya ja sakta h
+//   (reserved keywords cannot be used as identifiers such as variable names, function names, etc)
+// * reserved keyword syntax ka part hote h(reserved keywords are part of the syntax)
+
+
+//                             --------------  QFILEEXTENSION  --------------
+// * file extension file ke format ya fil m contain data ko indicate krte h(file extensions indicate the format
+//   of the file or the data content in the file)
 
 
 //                                --------------  QVARIABLES  --------------
