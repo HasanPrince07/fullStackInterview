@@ -255,17 +255,29 @@
 //   function is passed where the function is called)
 
 
+// * outer_function()() - isme outer function call hota h jo ek inner function ko return krta h fir second  
+//   parenthesis se inner function immediently call ho jata h(it contains an outer function call that returns
+//   an inner function and then the second parenthesis calls the inner function immediately)
+
+
 //                             --------------  QFUNCTIONDECLARATIONS  --------------
 // * is function ka name hona jruri h(it must have a name)
 // * ye hoisting hota h(it is hoisting)
-// * ise regular function or normal function bhi kaha jaata h(It is also called regular function and normal 
-//   function)
+// * ise regular function, normal function or function statment bhi kaha jaata h(It is also called regular 
+//   function, normal function and function statement)
 
 
 //                              --------------  QFUNCTIONEXPRESSION  --------------
 // * is function ka name nhi hota ise ek variable m store krte h(This function does not have a name, it is
 //   stored in a variable)
 // * ye hoisting nhi hote h(it is not hoisting)
+
+
+//                            --------------  QNAMEDFUNCTIONEXPRESSION  --------------
+// * named function expression ek function expression hota h with function name(a named function expression is
+//   a function expression with a function name)
+// * isme function ka name only function ke andr hi accessible hota h(in this the function name is accessible
+//   only inside the function)
 
 
 //                                --------------  QARROWFUNCTION  --------------
@@ -310,7 +322,31 @@
 // * constructor function ke name ka first charecter capital m hona jaruri h(the first letter of the 
 //   constructor function's name must be capitalized)
 // * constructor function m new keyword se object create kiya jata h(in the constructor function, an object is
-//   created using the new keyword) 
+//   created using the new keyword)
+
+
+//                              --------------  QFIRSTCLASSFUNCTION  --------------
+// * first class function concept ko refer krte h jisme function ko value ki tarah treat kiya jata h(first
+//   class functions refer to the concept in which functions are treated as values)
+// * first class function m hm function ko variable m store kr skte h(in first class function we can store the
+//   function in a variable)
+// * first class function m hm function ko as arguments usre function m pass krte h(in first class function, we
+//   pass the function as arguments to another function)
+// * first class function m hm function ko kisi dusre function se return kr skte h(in first class function we
+//   can return a function from another function)
+
+
+//                                   --------------  QHOF  --------------
+// * high order function ek function hota h jo ya to ek ya ek se jyada function ko as a arguments accept krta h
+//   ya fir kisi function ko as a result return krta h ya fir dono hi karta h(A high order function is a 
+//   function that either accepts one or more functions as arguments or returns a function as a result or does
+//   both)
+
+
+//                                 --------------  QCURRYING  --------------
+// * ye ek technique h jisme multiple arguments wale function ko several function m transform krte h jisme ek
+//   function ek hi arguments leta h(this is a technique in which a function taking multiple arguments is
+//   transformed into a multiple function taking a single argument)
 
 
 //                                  --------------  QTHIS  --------------
