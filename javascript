@@ -501,3 +501,13 @@
 //   the spread operator)
 // * spread operator ko ... se show kiya jata h(spread operator are shown by ...)
 // * spread operator es6 m introduce hua(spread operator introduced in S6)
+
+
+//                               --------------  QCALLBACKHELL  --------------
+// * callback hell esi situation ko refer krta h jaha asynchrouns operation ko handle krne ke liye nested
+//   callback ka use kiya jata h(callback vehicle refers to a situation where nested callbacks are used to
+//   handle asynchronous operations)
+// * callback hell ki situation m code ko read, debug or maintain krna dificult hota h(in a callback hell
+//   situation, it is difficult to read, debug, and maintain the code)
+// * promises or async/await ka use krke callbak hell ko resolve kr skte h(callback hell can be resolved by
+//   using promises and async/await)
