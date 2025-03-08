@@ -49,7 +49,7 @@
 //   version of a package)
 
 
-//                                 --------------  QRUNTIMEENVIRONMENT  --------------
+//                                --------------  QRUNTIMEENVIRONMENT  --------------
 // * runtime enviroment ek enviroment hota h jisme js ko web browser ke bhar execute kiya jata h(runtime 
 //   environment is the environment in which JS is executed outside the web browser)
 // * js program ko run krne ke liye is enviroment m sabhi tools, libreries or baki infrastrucure hote h(this 
@@ -162,11 +162,29 @@
 //   event loop hota h jo un request ko accept krke check krta h ki request blocking/syncronus h ya
 //   non-blocking agr request non-blocking hoti h to event loop us request ko aage process kr deta h pr agr 
 //   request blocking hoti h to us request ko thread pool m forword kiya jata h thread pool m threads hote h
-//   jo non-blocking request ko process krte h(the client makes a request to the frontend the request is stored
+//   jo blocking request ko process krte h(the client makes a request to the frontend the request is stored
 //   in the event queue in nodejs, then nodejs has an event loop which accepts the request and checks whether
 //   the request is blocking or non-blocking, if the request is non-blocking then the event loop processes the
 //   request further and if the request is blocking then the event loop forwards the request to the thread pool
 //   which contains threads that process blocking requests)
+// * nodejs event driven or non-blocking i/o model pr work krta h(nodejs works on an event driven and non 
+//   blocking i/o model)
+
+
+// * non-blocking i/o operations ek asyncrounus operation hota h(non-blocking i/o operations are an 
+//   asynchronous operation)
+
+
+//                                 --------------  QEVENTDRIVEN  --------------
+// * event driven ek core principal h jisme event loop hota h jo non-blocking request ko handle krta h(event 
+//   driven is a core principle with an event loop that handles non blocking requests)
+
+
+//                                   --------------  QEVENTLOOP  --------------
+// * event loop nodejs m core concept h jo asynchronous operations ko handle krta h(the event loop is a core
+//   concept in nodejs that handles asynchronous operations)
+// * event loop continuesly event queue ko check krta h or tasks ko sequently execute krta rhta h(the event
+//   loop continuously checks event queue and executes tasks sequentially)
 
 
 //                                    --------------  QBLOCKING  --------------
@@ -232,7 +250,12 @@
 
 
 //                                   --------------  QEXPRESS  --------------
-// * express is a framework for node.js
+// * express nodejs ka framework h jo nodejs application ko develop krne ke liye features ka set provide krta h
+//   (express is a framework of nodejs that provides set of features to develop nodejs applications)
+// * express nodejs application ko build krne ke process ko easy krta h(express makes the process of building
+//   nodejs applications easy)
+// * express http request response ko handle krne ko easy bnata h(express makes it easy to handle http request
+//   responses)
 
 
 //                              --------------  QMIDDLEWAREFUNCTION  --------------
@@ -248,6 +271,19 @@
 //   and then a condition is given to the middleware function on the basis of which the request-response cycle
 //   is continue or end)
 // * authentication m iska use krte h(we use it in authentication)
+
+
+// * type of middleware - application-level middleware, router-level middleware, error-handling middleware,
+//   built-in middleware, third-party middleware, custom middleware
+//   application-level middleware - app.use() ka use krke in middlewares ko puri application pr apply krt h jo 
+//   hr request pr call hote h()
+//   router-level middleware - ye middlewares certain route pr apply hote h or un certain route pr request 
+//   ane pr call hote h()
+//   error-handling middleware - application m error ko handle krne ke liye in middleware ka use krte h()
+//   built-in middleware - express.json(), express.urlencoded(), express.static() express provide these 
+//   middleware
+//   third-party middleware - corse this middleware provided by third party
+//   custom middleware - these middleware functions are defined for specific tasks
 
 
 //                                --------------  QMVCPATTERN  --------------
@@ -288,7 +324,7 @@
 
 //                                --------------  QAUTHORIZATION  --------------
 // * authorization user ki identity ya role ke bases pr user ke liye resources, actions, services access ya
-//   denying krne ka ek process hota h(Authorizations are the process of granting or accessing resources, 
+//   denying krne ka ek process hota h(authorizations are the process of granting or accessing resources, 
 //   actions, or services to a user based on the user's identity or role)
 // * isme sirf permission vale user hi resources ko access ya kuch specific action ko perform kr skte h(In this,
 //   only users with permission can access resources or perform some specific actions)
@@ -321,3 +357,95 @@
 //   child process is a separate process that can be created or managed from the child process module)
 // * child process ka use parallel m task perform krne ke liye krte h(child processes are used to perform tasks
 //   in parallel)
+
+
+//                                  --------------  QSTREAM  --------------
+// * stream ek way h jisme data ko ek sath read ya write krne ke bjae chunks m handle kiya jata h(stream is a
+//   way in which data is handled in chunks instead of reading or writing it at once)
+// * stream ka use large amount of data process krne m kiya jata h(stream is used to process large amount of data)
+// * stream asynchronously work krta h(stream works asynchronously)
+// * stream buffer ka use as a temporary storage krte h(stream uses buffer as a temporary storage)
+// * 4 type of streams - 1. readable stream 2. writable stream 3. duplex stream 4. transform stream
+// 1. readable streams - fs.createReadStream - for file reading
+// 2. writable streams - fs.createWriteStream - for file writing
+// 3. duplex streams - for both reading and writing
+// 4. transform streams - a type of duplex stream where the output is computed based on the input
+
+
+//                                  --------------  QBUFFER  --------------
+// buffer binary data ke liye temporary storage area hote h(buffers are temporary storage areas for binary data)
+// buffer ka use raw binary data ko handle krne m kiya jata h(buffers are used to handle raw binary data)
+// buffer se data ke chunk ko process krte h(chunks of data are processed using buffer)
+// buffer ki ek fix size hoti h jo dynamically change nhi hoti(buffers have a fixed size which does not change
+// dynamically)
+// buffer nodejs m globally available hota h ise import krne ki need nhi hoti(buffers are globally available in
+// nodejs, hence there is no need to import them)
+// buffer.alloc() - it creates a buffer and allocates size to it
+// buffer.write() - it writes the data on buffer
+// buffer.toString() - it read data from the buffer and returned it
+// buffer.length - it returns the size of the buffer in bytes
+
+
+//                             --------------  QREACTORPATTERN  --------------
+// * ye ek design pattern hota h jiska use i/o operations ko handle krne ke liye krte h(it is a design pattern
+//   that is used to handle I/O operations)
+
+
+//                                --------------  QEVENTS  --------------
+// * events ek built-in module hota h jiske through hm eventEmitter class ko create krte h()
+
+
+//                             --------------  QEVENTEMITTER  --------------
+// * event emitter ek class hoti h jisse events ko emit/generate kiya jata h()
+// * .emit() - use this method for emit a event
+// * .on() - use this method for attach listener on event
+// * .off() - use this method for detach listener on event
+// * .once() - use this method for attach listener on single execution of the event
+
+
+//                               --------------  QCLUSTER  --------------
+// cluster ek built-in module hota h jisse nodejs application m multiple instances/child process run krte h
+// (cluster is a built-in module that runs multiple instances/child processes in a nodejs application)
+// cluster ki help se application pr workload km hota h(with the help of cluster, the workload on the 
+// application is reduced)
+// cluster m master process child process/worker ko manage krta h(in a cluster, the master process manages the
+// child process/worker)
+// .fork() - using this method we create child process/worker
+// each child process/worker nodejs ke instance ko run krta h(each child process/worker runs an instance of 
+// nodejs)
+// child process/workers same hi port share krte h pr request ko independly handle kr skte h(the child 
+// process/workers share the same port but can handle requests independently)
+// hr ek worker ek alg core pr chlta h(each worker runs on a different core)
+// worker crash hone pr master process new worker create krta h(in case of a worker crash, the master process
+// creates a new worker)
+
+
+//                              --------------  QWORKERTHREADS  --------------
+// * worker threads module hota h jisse multi-threading kr skte h(worker threads are a model that allows multi
+//   threading)
+// * worker threads se main thread ke parallel javscript code ko run krne ke liye multi thread create krte h
+//  (worker threads create multiple threads to run javascript code in parallel with main threads)
+
+
+// * nodejs by-defualt single threaded hota h kyuki ye event-driven or non-blocking i/o model ka use krta h
+//   (nodejs is single-threaded by default as it uses an event-driven and non-blocking i/o model)
+// * nodejs m multi threaded operation ke liye worker thread, child process, cluster ka use krte h(nodejs uses
+//   worker threads, child processes, clusters for multi-threaded operations)
+
+
+//                              --------------  QERRORHANDLING  --------------
+// * error handle krne ke liye try catch block, error handling middleware, promises ka use krte h(to handle 
+//   errors we use try catch blocks, error handling middleware, promises)
+
+
+//                            --------------  QERRORFIRSTCALLBACK  --------------
+// * error first callback ek design pattern hota h jiska use asynchrouns operation ko handle krne ke liye kiya
+//   jata h(error First callback is a design pattern used to handle asynchronous operations)
+// * error first callback m callback ka pahla argument ek error object hota h(in error first callback the first
+//   argument of the callback is an error object)
+// * error first callback m callback ke baki argument result hote h(in the error first callback the remaining
+//   arguments of the callback are the result)
+// * error first callback m asynchronous operation succesfull hone pr error object ki value null ya undefind 
+//   hoti h or fail hone pr error object m error ki detail hoti h(if the asynchronous operation in the first 
+//   callback succeeds then the value of the error object is null or undefined and if the asynchronous
+//   operation fails then the value of the error object is error)
