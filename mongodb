@@ -1,0 +1,190 @@
+//                                --------------  QMONGODB  --------------
+// * mongodb ek document database management system h (mongodb is a document database management system)
+// * iska use large amount of data ko store krne m krte h (it is used for store large amount of data)
+// * ye non-relational/nosql based h (it is non-ralational/nosql based)
+// * isme data bson document m store hota h(in this data store in form of bson document)
+
+
+//                             --------------  QMONGODBFEATURES  --------------
+// * mongodb allows dynamic data structure
+// * schema less data structure which means one collection can hold diffrent type of document
+// * high performance because run operations fastly
+// * horizontal scalibility with help of sharding
+// * support multiple storage enigne
+
+
+//                             --------------  QHOWMONGODBWORKS  --------------
+// * user frontend pr request krta h tb query frontend se backend or backend se mongodb server pr pass hoti h
+//   phir mongodb server query ko storage engine m pass krta h jaha data ko read or write kiya jata h phir data
+//   database m store hota h(When the user makes a request on the frontend, the query goes from the frontend to 
+//   the backend and then from the backend to the MongoDB server Then mongodb server passes the query to the 
+//   storage engine where the data is read and write then data store in database)
+
+
+//                                --------------  QDATABASE  --------------
+// * database data ka collection hota h(database is a collection of data)
+// * two type of database - 1. relational database(sql) 2. non-relational database(nosql)
+
+
+//                              --------------  QSQLDATABASE  --------------
+// * isme data table ki form m store hota h(in this, data is stored in the form of table)
+
+
+//                             --------------  QNOSLQDATABASE  --------------
+// * isme data document ki form m store hota h jise document database bhi khte h(in this, data is stored in the
+//   form of document which is also called document database)
+
+
+//                           --------------  QSCHEMALESSDATABASE  --------------
+// * mongodb ek schemaless database h(mongodb is a schemaless database)
+// * mongodb m pre-defined schema ki require nahi hoti(mongodb does not require a pre-defined schema)
+
+
+//                              --------------  QCOLLECTION  --------------
+// * collection relational database ki table ki tarah hote h(Collections are like tables in relational database)
+// * documents ko collection m store kiya jata h(Documents are stored in collections)
+
+
+//                       --------------  QEMBEDDEDDOCUMENT/QNESTEDDOCUMENT  --------------
+// * document ke andr document ko embedded/nested document kahte h(Embedded/nested documents are those types of
+//   documents which contain a document inside another document)
+
+
+//                                --------------  QDOCUMENT  --------------
+// * document record hota h jise ham collection m store karte h(document are record which we store in collection)
+// * document m data feild value ke form m hota h(Data in the document is in the form of field values)
+// * document json object ki tarah hote h(documents are similar to JSON objects)
+// * same collection ke documents ka schema same hona jarurui nhi hota mtlb documents ke feild or un fields ke
+//   data type diffrent ho skte h(It is not necessary for the documents in the same collection to have the same
+//   schema, meaning the fields of the documents and the data types of those fields can be different)
+
+
+//                                --------------  QSCHEMA  --------------
+// * schema ek json object hota h jo data ke structure ko define krta h(schema is a json object that defines
+//   structure of data)
+
+
+//                              --------------  QD.JSON&BSON  --------------
+// * json - javascript object notation is a human readable format of data
+// * bson - it is a binary form of json
+
+
+// * mongodb supports these datatype - string, number, boolean, null, date, array, object, objectId,
+//   binary data
+
+
+//                           --------------  QCOMPARISONOPERATOR  --------------
+// * $eq, $ne, $gt, $gte, $lt, $lte, $in, $nin
+// * $eq example -> db.collection_name.find({"field_name":{$eq:50}})
+// * $ne example -> db.collection_name.find({"field_name":{$ne:50}})
+// * $gt example -> db.collection_name.find({"field_name":{$gt:50}})
+// * $gte example -> db.collection_name.find({"field_name":{$gte:50}})
+// * $lt example -> db.collection_name.find({"field_name":{$lt:50}})
+// * $lte example -> db.collection_name.find({"field_name":{$lte:50}})
+// * $in example -> db.collection_name.find({"field_name":{$in:[50,60]}})
+// * $nin example -> db.collection_name.find({"field_name":{$nin:[50,60]}})
+
+
+//                            --------------  QLOGICALOPERATOR  --------------
+// * $and, $or, $not, $nor
+// * $and example -> db.collection_name.find({$and:[{"field_name":value},{"field_name":value}]})
+// * $or example -> db.collection_name.find({$or:[{"field_name":value},{"field_name":value}]})
+// * $nor example -> db.collection_name.find({$nor:[{"field_name":value},{"field_name":value}]}) -> dono
+//   condition ko chodke baki bacha document return krega
+// * $not example -> db.collection_name.find({"field_name":{$not:{$gt:value}}})
+// * $not example -> db.collection_name.find({"field_name":{$ne:value}})
+
+
+//                            --------------  QCURSORMETHOD  --------------
+// * $count, $limit, $skip, $sort
+// * $count example -> db.collection_name.find({"field_name":{$gt:50}}).count()
+// * $limit example -> db.collection_name.find({"field_name":{$gt:50}}).limit(3)
+// * $skip example -> db.collection_name.find({"field_name":{$gt:50}}).skip(2) -> skip 2 value from starting
+// * $sort example -> db.collection_name.find({"field_name":{$gt:50}}).sort({"field_name":1}) -> ascending
+// * $sort example -> db.collection_name.find({"field_name":{$gt:50}}).sort({"field_name":-1}) -> decending
+
+
+//                               --------------  QCOMMANDS  --------------
+// * show dbs -> for see all database
+// * use db_name -> for select database and create database
+// * db.dropDatabase() -> for drop database
+// * show collections -> for see all collections
+// * db.createCollection("collection_name") -> for create collection
+// * db.collection_name.drop() -> for drop collection
+// * db.collection_name.insertOne/db.collectiona_name.createIndex -> for insert one document in collection
+// * db.collection_name.insertMany -> for insert many document in collection
+// * db.collection_name.find() -> for fetch all documents in collection
+// * db.collection_name.findOne() -> for fetch one document in collection
+// * db.collection_name.find().limit() -> for fetch limited documents in collection
+// * db.collection_name.find().count() -> for fetch number of documents in collection
+// * db.collection_name.updateOne({_id:ObjectId('123')}, {$set: {'existing_field':'new_value'}}) -> for update
+//   only one fields value and for add one field
+// * db.collection_name.updateMany({age:25}, {$set: {'existing_field':'new_value'}}) -> for update many fields
+//   value
+// * db.collection_name.updateOne({age:25}, {$unset: {'field_name':1}}) -> for remove field 
+// * db.collection_name.updateMany({age:25}, {$rename: {'old_field_name':'new_field_name'}}) -> for update many 
+//   fields name
+// * db.collection_name.deleteOne({_id:1}) -> for delete single document
+// * db.collection_name.deleteMany({price:122}) -> for delete multiple document
+
+
+//                               --------------  QINDEXES  --------------
+// * indexes data structure hote h jo ki query ke efficient execution ko support krte h(indexes are data 
+//   structure that support efficient execution of queries)
+// * indexes m data ki copy contain hoti h(indexes contain copy of data)
+// * without indexes mongodb har ek document ko scan karta h(without indexes mongodb scans every document)
+// * ek collection m multiple indexes ho sakte h(multiple indexes can exist per collection)
+// * indexes ki help se query fast perform hoti h(with help of indexes query perform fastly)
+
+
+//                               --------------  QSHARDING  --------------
+// * sharding large data set ko handle krne ke liye multiple machines m data destribute krne ka ek method h
+//   (sharding is a method for distributing data across multiple machines to handle large data set)
+// * sharding ek type ki horizontal scaling h(sharding is a type of horizontal scaling)
+// * sharding se performance improve hoti h(sharding improves performance)
+
+// shard - shard ek mongodb instance/database h jo total data ka subset store krta h(shard is a mongodb 
+//         instance/database that stores a subset of the total data)
+// shard key - ye ek field hoti h jo determine krti h ki data ko shard m kese destribute krna h(this is a field
+//             that determines how the data is to be distributed across the shards)
+// config server - ye shard kiye gye cluster ke bare m metadata or configuration information store rkhte h
+//                 (these store metadata and configuration information about the shared cluster)
+// * jb document database m insert hota h to mognodb shard key ke bases pr determine krta h ki document kis
+// shard ko belong krta h fir document uchit shard m insert hota h(when a document is inserted in the database,
+// mognodb determines on the basis of the shard key to which shard the document belongs, then the document is
+// inserted in the desired shard)
+
+
+//                             --------------  QAGGREGATION  --------------
+// * aggregation ek process h jo ki multiple documents ko process karta h or computed result return karta h(
+//   aggregation is a process which process multiple documents and return computed result)
+
+
+//                                --------------  QATLAS  --------------
+// * ye mongodb ki cloud database service h(it is a mongodb's cloud database service)
+// * isse aap apne data ko cloud m host or manage kr skte h(you can host and manage your data in cloud with help 
+//   of this)
+
+
+//                               --------------  QCLUSTER  --------------
+// * cluster interconnected server ko refer karta h jo ki data store or manage karne ke liye ek sath work karte h
+//   (cluster refers to a group of interconnected servers that work together to store and manage data)
+
+
+//                               --------------  QDRIVERS  --------------
+// * drivers software library hote h jo ki application ko allow karte h mongodb database se intrect karne ke liye
+//   (drivers are software library that allow applications to interact with mongodb databases)
+// * mongodb varoius programing language jese c, c++, java, python, php, node.js, ruby ko supported drivers offer
+//   karta h(mongodb offer supported drivers for various programing language like c, c++, java, python, php,
+//   node.js, ruby)
+
+
+//                             --------------  QMONGOSHELL  --------------
+// * mongodb shell/mongosh ek javascript environment hota h jiska use mongodb se interact krne ke liye krte h
+//   (mongodb shell/mongosh is a javascript environment used to interact with mongodb)
+// * mongodb shell ka use database ko explore or query ko run krne ke liye krte h(we use the mongodb shell to
+//   explore the database and run queries)
+
+// vertical scaling, horizontal scaling
+// clustr shards
+// replication
