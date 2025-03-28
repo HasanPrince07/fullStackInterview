@@ -129,8 +129,9 @@
 
 
 //                               --------------  QINDEXES  --------------
-// * indexes data structure hote h jo ki query ke efficient execution ko support krte h(indexes are data 
-//   structure that support efficient execution of queries)
+// * indexes data structure hote h jo collection ke data set ke small portion ko store rkhte h jisse data ko
+//   fastly access kiya ja skta h(indexes are data structures that store small portions of a collection of data
+//   sets, allowing the data to be accessed quickly)
 // * indexes m data ki copy contain hoti h(indexes contain copy of data)
 // * without indexes mongodb har ek document ko scan karta h(without indexes mongodb scans every document)
 // * ek collection m multiple indexes ho sakte h(multiple indexes can exist per collection)
@@ -143,6 +144,7 @@
 // * sharding ek type ki horizontal scaling h(sharding is a type of horizontal scaling)
 // * sharding se performance improve hoti h(sharding improves performance)
 
+// sharded cluster - a collection of shard
 // shard - shard ek mongodb instance/database h jo total data ka subset store krta h(shard is a mongodb 
 //         instance/database that stores a subset of the total data)
 // shard key - ye ek field hoti h jo determine krti h ki data ko shard m kese destribute krna h(this is a field
@@ -150,9 +152,19 @@
 // config server - ye shard kiye gye cluster ke bare m metadata or configuration information store rkhte h
 //                 (these store metadata and configuration information about the shared cluster)
 // * jb document database m insert hota h to mognodb shard key ke bases pr determine krta h ki document kis
-// shard ko belong krta h fir document uchit shard m insert hota h(when a document is inserted in the database,
-// mognodb determines on the basis of the shard key to which shard the document belongs, then the document is
-// inserted in the desired shard)
+//   shard ko belong krta h fir document uchit shard m insert hota h(when a document is inserted in the 
+//   database, mognodb determines on the basis of the shard key to which shard the document belongs, then the 
+//   document is inserted in the desired shard)
+
+
+//                               --------------  QREPLICATION  --------------
+// * replication ek replica set ke andr different server/node pr data ki copies create krna or maintain rkhne
+//   ka process h jisse data ki avability ko badaya ja ske(replication is the process of creating and  
+//   maintaining copies of data on different servers/nodes within a replica set to increase data availability)
+// * ek server down hone pr data another server pr available hota h(If one server is down the data is available
+//   on another server)
+// replica set - ye mongodb server ka group hota h jo same data set ko maintain rkhta h(these are groups of
+// mongodb servers that maintain the same data set)
 
 
 //                             --------------  QAGGREGATION  --------------
@@ -179,12 +191,29 @@
 //   node.js, ruby)
 
 
+//                             --------------  QPOPULATE  --------------
+// * populate ek feature hota h jisse relational data ke sath easily work kiya ja sakta h(populate is a feature
+//   that allows you to work easily with relational data)
+// * populate m ek document dusre collection ke document ko reference krta h(a document in populate references
+//   a document in another collection)
+// * populate ki help se referenced document ko easily fetch kiya ja sakta h(with the help of populate the
+//   referenced document can be fetched easily)
+
+
 //                             --------------  QMONGOSHELL  --------------
 // * mongodb shell/mongosh ek javascript environment hota h jiska use mongodb se interact krne ke liye krte h
 //   (mongodb shell/mongosh is a javascript environment used to interact with mongodb)
 // * mongodb shell ka use database ko explore or query ko run krne ke liye krte h(we use the mongodb shell to
 //   explore the database and run queries)
 
-// vertical scaling, horizontal scaling
-// clustr shards
-// replication
+// * vertical or horizontal scaling se large amount of users ko handle krne ke liye system ki capacity or 
+//   performance ko increase krte h(vertical and horizontal scaling increases the capacity of the system to 
+//   handle large amounts of users)
+// * vertical scaling - 1. isme load ko handle krne ke liye single server ki capacity ko increase krte h jiske 
+//   liye storage ki capacity, ram, cpu cores ko bdate h ya faster disk drive, faster processer ka use krte h
+//   (in this, we increase the capacity of a single server to handle the load for which we increase the storage
+//   capacity, ram, cpu cores or use faster disk drive, faster processor)
+//   2. application ek hi server pr depend hoti h or isme server ki capacity ek limit tk hi increase kr skte h
+//   the application depends on a single server and the server capacity can be increased only up to a limit)
+// * horizontal scaling - isme load ko handle krme ke liye more server ko add krte h(in this we add more 
+//   servers to handle the load)
