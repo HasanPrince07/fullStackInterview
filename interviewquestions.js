@@ -2,7 +2,32 @@
 // * two type of javascript - vanilla js,advance js
 // * vanilla js - it is a client side language use for develop frontend part of web application
 // * advance js - it is a server side language use for develop backend part of web application
-// * JavaScript is the world's most popular programming language
+// * javaScript is the world's most popular programming language used in web development
+// * javaScript is used both in the frontend and backend
+// * JavaScript is used to create logic in the frontend and interact with the user
+// * JavaScript is used to develop backend part of web application in node.js
+// * javascript is single-threaded
+// * javascript is synchronous by default but supports asynchronous programming through the event loop, 
+//   callbacks, promises, and async/await
+
+// * external javascript m .js extension wali ek external file m javascript code hoti h jis file ka html ke 
+//   head ya body element m link dete h(external JavaScript contains JavaScript code in an external file with a
+//   .js extension which is linked to in the head or body element of the HTML)
+// * external javascript ko reuse kiya ja sakta h(external JavaScript can be reused)
+// * external javascript se code more readable ho jaati h(external JavaScript makes the code more readable)
+
+
+//                             --------------  QRESERVEDKEYWORD  --------------
+// * reserved keywords words hote h jinki prefined meaning hoti h(reserved keywords are words that have a 
+//   predefined meaning)
+// * reserved keywords ka use as a identifier jese variable name, function name etc. nahi kiya ja sakta h
+//   (reserved keywords cannot be used as identifiers such as variable names, function names, etc)
+// * reserved keyword syntax ka part hote h(reserved keywords are part of the syntax)
+
+
+//                             --------------  QFILEEXTENSION  --------------
+// * file extension file ke format ya fil m contain data ko indicate krte h(file extensions indicate the format
+//   of the file or the data content in the file)
 
 
 //                                --------------  QVARIABLES  --------------
@@ -24,8 +49,8 @@
 //   the scope of the variable is can global,local or block scope)
 // * 4. isse declare krne pr variable ko redeclare nhi kr skte(variables declared with let can not be
 //   redeclared)
-// * 5. isse declare variable apne scope m hoisted hote h without default value(variables declared with let
-//   are hoisted into their scope without default value)
+// * 5. isse declare variable apne scope m hoisted hote h with initialization error(variables declared with let
+//   are hoisted into their scope with initialization error)
 // * const - 1. ye keyword js ke es6 version m add huva tha(this keyword was added in es6 version of js)
 //   2. isse declare varaible ki value reassign nhi kr skte(this not allows reassigning the declared
 //   variable's value)
@@ -33,8 +58,8 @@
 //   the scope of the variable is can global,local or block scope)
 // * 4. isse declare krne pr variable ko redeclare nhi kr skte(variables declared with const can not be
 //   redeclared)
-// * 5. isse declare variable apne scope m hoisted hote without default value(variables declared with const 
-//   are hoisted into their scope without default value)
+// * 5. isse declare variable apne scope m hoisted hote with initialization error(variables declared with const 
+//   are hoisted into their scope with initialization error)
 
 
 //                                --------------  QOPERATOR  --------------
@@ -44,14 +69,33 @@
 // * ternary operator - ?
 // * logical operator - &&,||,!
 
+// * typeof - it is a operator use for check the type of value or variable and it returns a string value.
+
+
+//                                 --------------  QNAN  --------------
+// * not a number represent a invalid number
+// * isNaN() - this function chekcs if a value is NaN
+// * NaN is not equal to anything
+// * NaN == NaN, NaN === NaN - both are false
+
 
 //                                --------------  QDATATYPE  --------------
-// * string,number,boolean,null,undefined,array,object
+// * 2 type of datatypes - primitive, non-primitive
+// * primitive data type - string, number, boolean, undefined, null, symbol, bigInt
+// * non-primitive data type - object
+// * string - represents a sequence of characters enclosed in single, double, or backticks
+// * number -  represents numeric values, including integers and floating-point numbers
+// * boolean - represents either true or false
+// * undefined - represents a variable that has been declared but not assigned a value
+// * null - represents a empty value of variable
+// * symbol - represents a unique and immutable value and it is use for create unique id and it is introduced
+//   in es6
+// * bigInt - represents large numbers of integers and it is introduced in es10
 
 
 //                                 --------------  QARRAY  --------------
-// * array ek datatype hota h jiska use data ke collection ko store krne ke liye kiya jata h(Array is a data
-//   type which is used to store a collection of data)
+// * array ka use data ke ordered collection ko store krne ke liye kiya jata h(array are used to store ordered 
+//   collections of data)
 // * array m index number hota h jo array m element ki position ko specifie krta h(An index is a number in an
 //   array that specifies the position of an element in the array)
 
@@ -62,6 +106,8 @@
 //   key(name)-value)
 // * object ki properties ko dot notaion or bracket notation method se access kr skte h(You can access the
 //   properties of the object using dot notation and bracket notation methods)
+// * dot notaion method example - object_name.key=key's_value
+// * bracket notation method example - object_name[key]=key's_value
 
 
 // * length - ye ek property hoti h jo no. of string character or no. of arrays element return krta h(it is a
@@ -79,39 +125,96 @@
 
 //                               --------------  QARRAYSMETHOD  --------------
 // **push(),pop(),unshift(),shift(),slice(),splice(),concat(),reverse(),sort(),fill(),Array.isArray(),join(),
-//   forEach()
+//   forEach(),map(),filter(),find(),findIndex()
+
+
+// * push() - array ke end m element add krne ke liye(to add an element to the end of an array)
+//   example - array_name.push(element)
+// * pop() - array ke end wale element ko remove krne ke liye(to remove an element to the end of an array)
+//   example - array_name.pop(element)
+// * unshift() - array ke start m element add krne ke liye(to add an element to the start of an array)
+//   example - array_name.unshift(element)
+// * shift() - array ke start wale element ko remove krne ke liye(to remove an element to the start of an array)
+//   example - array_name.shift(element)
+// * slice() - array ke kuch element se ek new array return krta h(returns a new array from some of the 
+//   elements of an array)
+//   example - array_name.slice(someelement,someelement)
+// * splice() - array se element remove/add krne ke liye(add/remove elements in an array)
+//   example - array_name.splice(indexno,howmanyelementremove,someelement)
+// * concat() - multiple arrays ko combine krta h(combine multiple arrays)
+//   example - arrayone_name.concat(arraytwo_name)
+// * reverse() - elements ke order ko reverse krta h(revrese the order of elements)
+//   example - array_name.reverse()
+// * sort() - sort elements
+//   example - array_name.sort()
+// * Array.isArray() - ye check krta h ki value array h ya nahi(check if a value is an array)
+//   example - Array.isArray(value)
+// * join() - elements ke bich value add krke string return krta h(returns a string by adding values ​​between
+//   elements)
+//   example - array_name.join(",")
+// * forEach() - isme ek function pass krte h jo array ke elements ko return krta h(we pass a function into it
+//   that returns the elements of the array)
+//   example - array_name.forEach((data)=>{data})
+// * map() - array ke hr element pr calculation krke ek new array return krta h(performs calculations on each
+//   element of the array and returns a new array)
+//   example - array_name.map(data=>data*2)
+// * filter() - array ke hr element pr condition apply krke ek new array return krta h(returns a new array by
+//   applying a condition to each element of the array)
+//   example - array_name.filter(data=>data%2===0)
+// * find() - condition se match hone wala sbse pahla element return krta h(Find the first element that matches
+//   a condition)
+//   example - array_name.find(data=>data%2===0)
+// * findIndex() - condition se match hone wala sbse pahle element ka index return krta h(Find the first 
+//   element's index that matches a condition)
+//   example - array_name.findIndex(data=>data%2===0)
 
 
 //                                --------------  QSETTIMEOUT  --------------
-// * ye function ko ek specific time ke bad call krta h(it call function after specific time)
+// * ye built-in function hota h jo kisi function ya code ko ek specific time ke bad ek baar call krta h(it is 
+//   a built-in function that calls a function or code one time after a specific time)
+// * settimeout asynchronous hota h(settimeout is asynchronous)
 
 
 //                                --------------  QSETINTERVAL  --------------
-// * ye function ko ek specific time pr continuously call krta h(it call function continuously on specific
-//   time)
+// * ye built-in function hota h jo ek function ya code ko ek specific time pr continuously call krta h(it is a
+//   built-in function that is continuously call a function or code after specific time)
+// * setinterval asynchronous hota h(setinterval is asynchronous)
+
 
 //                                --------------  QCLEARTIMEOUT  --------------
-// * setTimeout ko stop krta h(it stop setTimeout)
+// * setTimeout ek id return krta h jise cleartimeout function m put krte h settimeout ko stop krne ke liye(The
+//   setTimeout returns an ID which is passed to the cleartimeout function to stop the setTimeout)
 
 //                               --------------  QCLEARINTERVAL  --------------
-// * setInterval ko stop krta h(it stop setInterval)
+// * setinterval ek id return krta h jise clearinterval function m put krte h setinterval ko stop krne ke liye
+//   (The setinterval returns an ID which is passed to the cleartimeout function to stop the setinterval)
 
 
 //                                    --------------  QSCOPE  --------------
-// * scope variable ki accesebility ko determine krta h(scope determines the accessibility of variables)
-// * 3 types of scope - global scope, local scope, block scope
-// * global scope - jb variable ko function ya block ke bhar declare kiya jata h to uske scope ko global
-//   scope khte h jisme varaible ko kahi bhi access kiya ja skta h(when the variable is declared throughout
-//   the function or block, then its scope is called global scope, in which the variable can be accessed
-//   anywhere)
-// * local scope - jb variable ko function ke ander declare kiya jata h to uske scope ko local scope kahte h
-//   jisme varaible ko keval function ke ander hi access kr skte h(when the variable is declared inside
-//   the function, then its scope is called local scope, in which the variable can be accessed inside the
-//   function only)
+// * scope variables or functions ki accesebility ko determine krta h(scope determines the accessibility of 
+//   variables and functions)
+// * types of scope - global scope, local scope/function scope, block scope, lexical scope
+// * global scope - jb variable ya function ko function ya block ke bhar declare kiya jata h to uske scope ko 
+//   global scope khte h jisme varaible ya function ko kahi bhi access kiya ja skta h(when the variable or 
+//   function is declared throughout the function or block, then its scope is called global scope, in which the  
+//   variable or function can be accessed anywhere)
+// * local scope - jb variable ya function ko function ke ander declare kiya jata h to uske scope ko local 
+//   scope kahte h jisme varaible ya function ko keval function ke ander hi access kr skte h(when the variable
+//   or function is declared inside the function, then its scope is called local scope, in which the variable 
+//   or function can be accessed inside the function only)
 // * block scope - jb variable ko kisi block ke ander declare kiya jata h to uske scope ko block scope kahte
 //   h jisme varaible ko keval us block ke ander hi access kr skte h. ye scope es6 version m introduce hova
 //   tha(when the variable is declared inside the block, then its scope is called block scope, in which the
 //   variable can be accessed inside the block only. this block was introduce in es6 version)
+// * lexical scope - isme inner function ko outer function ke variable ka access rahta h(the inner function has
+//   access to the variables of the outer function in lexical scope)
+
+
+//                                  --------------  QSCOPECHAIN  --------------
+// * scope chain ek process hota h jisme variable ko inner to outer scope ke order m find kiya jata h(scope
+//   chain is a process in which variables are searched in order from inner to outer scope)
+// * last m global scope m bhi variable find na ho to error show hoti h(finally, an error is shown if the
+//   variable does not exist in the global scope as well)
 
 
 //                                    --------------  QLOOP  --------------
@@ -152,15 +255,29 @@
 //   function is passed where the function is called)
 
 
+// * outer_function()() - isme outer function call hota h jo ek inner function ko return krta h fir second  
+//   parenthesis se inner function immediently call ho jata h(it contains an outer function call that returns
+//   an inner function and then the second parenthesis calls the inner function immediately)
+
+
 //                             --------------  QFUNCTIONDECLARATIONS  --------------
 // * is function ka name hona jruri h(it must have a name)
 // * ye hoisting hota h(it is hoisting)
+// * ise regular function, normal function or function statment bhi kaha jaata h(It is also called regular 
+//   function, normal function and function statement)
 
 
 //                              --------------  QFUNCTIONEXPRESSION  --------------
 // * is function ka name nhi hota ise ek variable m store krte h(This function does not have a name, it is
 //   stored in a variable)
 // * ye hoisting nhi hote h(it is not hoisting)
+
+
+//                            --------------  QNAMEDFUNCTIONEXPRESSION  --------------
+// * named function expression ek function expression hota h with function name(a named function expression is
+//   a function expression with a function name)
+// * isme function ka name only function ke andr hi accessible hota h(in this the function name is accessible
+//   only inside the function)
 
 
 //                                --------------  QARROWFUNCTION  --------------
@@ -170,8 +287,10 @@
 //   hta skte h or single parameter pr round bracket/parentheses bhi hta skte h(With this function syntax
 //   can be written in short for example we can remove return keyword and curly bracket on single line
 //   statement and we can remove round bracket/parentheses on single parameter)
-// * iska khudka this nhi hota h ye apne parent ke this ko refer krta h(Arrow functions do not have their
-//   own this it refers to its parent this)
+// * iska khudka this keyword nhi hota h ye apne parent ke this ko refer krta h(arrow functions do not have 
+//   their own this keyword it refers to its parent this keyword)
+// * iska khudka arguments object nhi hota(arrow functions do not have their own argument object)
+// * isko as a constructor use nhi kr skte h(cannot be used as a constructor)
 
 
 //                             --------------  QCALLBACKFUNCTION  --------------
@@ -186,9 +305,113 @@
 // * expression function anonymous function hote h(expression function is a anonymous function)
 
 
+//                                  --------------  QIIFE  --------------
+// * immediately invoked function expression ek function hota h jise define krte h ye immediently execute ho 
+//   jata h(iife is a function that gets executed immediately after it is defined)
+// * iife ko self-invoking function or self-executing function bhi kahte h(iife also known as a self-invoking
+//   function or self-executing function)
+// * iife syntax - (function(){ console.log("call") })();
+
+
+//                            --------------  QCONSTRUCTORFUNCTION  --------------
+// * constructor function ka use object create krne ke liye kiya jata h(the constructor function is used to
+//   create an object)
+// * jb hame multiple objects create krne ho jinki properties or methods same ho tb constructor function ka use
+//   kiya jata h(constructor functions are used when we need to create multiple objects that contain the same
+//   properties and methods)
+// * constructor function ke name ka first charecter capital m hona jaruri h(the first letter of the 
+//   constructor function's name must be capitalized)
+// * constructor function m new keyword se object create kiya jata h(in the constructor function, an object is
+//   created using the new keyword)
+
+
+//                              --------------  QFIRSTCLASSFUNCTION  --------------
+// * first class function concept ko refer krte h jisme function ko value ki tarah treat kiya jata h(first
+//   class functions refer to the concept in which functions are treated as values)
+// * first class function m hm function ko variable m store kr skte h(in first class function we can store the
+//   function in a variable)
+// * first class function m hm function ko as arguments usre function m pass krte h(in first class function, we
+//   pass the function as arguments to another function)
+// * first class function m hm function ko kisi dusre function se return kr skte h(in first class function we
+//   can return a function from another function)
+
+
+//                                   --------------  QHOF  --------------
+// * high order function ek function hota h jo ya to ek ya ek se jyada function ko as a arguments accept krta h
+//   ya fir kisi function ko as a result return krta h ya fir dono hi karta h(A high order function is a 
+//   function that either accepts one or more functions as arguments or returns a function as a result or does
+//   both)
+
+
+//                                 --------------  QCURRYING  --------------
+// * ye ek technique h jisme multiple arguments wale function ko several function m transform krte h jisme ek
+//   function ek hi arguments leta h(this is a technique in which a function taking multiple arguments is
+//   transformed into a multiple function taking a single argument)
+
+
+//                                  --------------  QTHIS  --------------
+// * this ek identifier h jo us context ko refer krta h jisme code currently execute ho rha ho(this keyword is
+//   an identifier that refers to the context in which the code is currently executing)
+// * this ki value depend krti h ki this ka use kaha kiya ja raha h(this keyword's value depends on where it is
+//   being used)
+// * jb this keyword ka use global scope m kiya jata h tb this keyword browser m window object or nodejs m
+//   global ko refer krta h(when this keyword is used in global scope then this keyword refers to window object
+//   in browser and global in nodejs)
+// * object m this keyword us object ke current context ko refer krta h(in object this keyword refer to current
+//   context of object)
+// * constructor function m this keyword newly created object ko refer krta h(in constructor function this 
+//   keyword refer to newly created object)
+// * eventListner m this keyword us element ko refer krta h jisse event call hova ho(in eventListner this
+//   keyword refer to element that calls event)
+// * vo function jo kisi object ke method nhi h unme this keyword window object ko refer krta h(in functions 
+//   that are not methods of an object the this keyword refers to the window object)
+
+
 //                                --------------  QCLOSURE  --------------
-// * closure ek inner function hota h jo ki outer function ke scope ko access kr skta h(closure is an inner
-//   function that can access the scope of an outer function)
+// * closure ek function hota h jo ki outer function ke execution ke baad bhi apne lexical scope se outer 
+//   function ke variable ko access kr skta h(closure is a function that can access variables of outer function
+//   from lexical scope even after outer function has finished executing)
+
+
+//                                --------------  QHOISTING  --------------
+// * hoisting javascript ka ek machenism hota h jisse variable or function ko declare krne se pahle access kr
+//   skte h(hoisting is a JavaScript mechanism that allows accessing variables and functions before they are
+//   declared)
+
+
+//                                  --------------  QTDZ  --------------
+// * let ya const se declare variable se phle ka area temporal dead zone hota h(the area before the variable
+//   declared by let or const is the temporal dead zone)
+// * tdz m variable ko access nhi kiya ja skta(we can not access variable in tdz)
+// * tdz let or const se decalre variable ke liye hota h(tdz is apply only for let and const)
+
+
+//                               --------------  QUSESTRICT  --------------
+// * use strict ek directive h jo strict mode ko enable karta h(use strict is a directive which is enable
+//   strict mode)
+// * use strict common error ko catch krta h(use strict catches common error)
+// * ise es5 m introduce kiya gaya(it is introduce in es5)
+// * undeclared variable ko value assign krne pr error show krta h(shows error when assigning value to 
+//   undeclared variable)
+// * kuch syntax ko allow nhi krta h(does not allow certain syntax)
+// * isme this keyword un function m undifined hota h jo function kisi object ke method nhi hote(in this, this
+//   keyword is undefined in those functions which are not methods of any object)
+// * isme duplicate parameter allow nhi hote(duplicate parameters are not allowed in use strict)
+// * add "use script" at top for apply strict mode on whole script
+// * add "use script" inside function for apply strict mode on specific function
+
+
+//                             --------------  QTYPECEORCION  --------------
+// * kisi value ke data type ka conversion type ceorcion hota h(conversion of data type of a value is a type
+//   ceorcion)
+// * type of cercion - implicit type ceorcion, explicit type coercian
+// * implicit type ceorcion - jb different data type pr operation perform krte h tb javascript khudse data 
+//   type change krta h(javaScript automatically changes the data type when performing operations on different
+//   data types)
+// * example -> "3"+3="33", "3"-3=0
+// * explicit type coercin - isme developer methods se data type change krta h(in this the developer changes
+//   the data type through methods)
+// * methods for explicit type ceorcion - String(), Number(), Boolean()
 
 
 //                               --------------  QPROMISE  --------------
@@ -224,6 +447,70 @@
 // * ager kisi promise m resolve or reject dono ho to jo phle run hoga usi ka output milega(If a promise
 //   contains both Resolve and Reject, the one that is run first will get its output)
 // * error handling ke liye catch method use me lete h(we use catch method for error handling)
+
+
+//                                 --------------  QERROR  --------------
+// * error code ke execution m hone wale issue ko represent krta h(the error represents an issue occurring 
+//   during the execution of the code)
+// * error show krti h ki code m kaha or kya galat h(the error shows where and what is wrong in the code)
+// * error ko resolve na krne pr code execute nhi hota h(the code does not execute if the error is not resolved)
+// * types of error - compile error, runtime error
+// * compile error - ye error execution start hone se phle aati h(this error occurs before the execution 
+//   starts)
+// * runtime error - ye error tb aati h jb execution start ho jata h(this error occurs when the execution
+//   starts)
+// * SyntaxError - jb code m invalid syntax find ho tb ye error show hoti h(this error is shown when there is
+//   invalid syntax in the code)
+// * ReferenceError - jb variable ya function ko access krte h pr vo declare nhi hote tb ye error show hoti h
+//   (this error is shown when a variable or function is accessed but it is not declared)
+// * TypeError - jb unexpected value find ho tb ye error show hoti h(this error is shown when there is an 
+//   unexpected value found)
+// * SyntaxError is a part of compile error
+// * ReferenceError and TypeError is a part of runtime error
+
+
+//                             --------------  QERRORHANDLING  --------------
+// * ye ek runtime error ko handle krne ka process h jisse program crash hone ke bjae handle ho ske(this is a
+//   process of handling errors in a systematic way so that the program can be handled instead of crashing)
+// * error ko handle krne ke liye try, catch or finally ka use krte h(we use try, catch and finally to handle 
+//   errors)
+// * try block m vo code hogi jo error show kr skta h(the try block will contain the code that can show the
+//   error)
+// * error find hone pr catch block ki code execute hogi(the code in the catch block will be executed when an
+//   error occurs)
+// * finally block hmesha execute hota h chahe code m error find ho ya nahi(the finally block is always
+//   executed regardless of whether the code contains errors or not)
+// * throw keyword se custom error create or show kr skte h(You can create and show custom errors with the 
+//   throw keyword)
+
+
+//                              --------------  QRESTPARAMETER  --------------
+// * rest parameter ek feature h jisme ek function ke arguments ko array m represent krte h(rest parameters are
+//   a feature that represents the arguments of a function in an array)
+// * rest parameter ko ...name se show kiya jata h(rest parameters are shown by ...name)
+// * rest parameter function m last parameter hona chahiye(rest parameter must be the last parameter in the
+//   function)
+// * ek function m ek hi rest parameter hota h(a function can have only one rest parameter)
+// * rest parameter es6 m introduce hua(rest parameters introduced in S6)
+
+
+//                              --------------  QSPREADOPERATOR  --------------
+// * spread operator ka use array, string ko invidual elements, character m expand krne ke liye kiya jata h
+//   (spread operator is used to expand an array, string into individual elements, characters)
+// * spread operator se do array ya do object ko merg kr skte h(You can merge two arrays or two objects using
+//   the spread operator)
+// * spread operator ko ... se show kiya jata h(spread operator are shown by ...)
+// * spread operator es6 m introduce hua(spread operator introduced in S6)
+
+
+//                               --------------  QCALLBACKHELL  --------------
+// * callback hell esi situation ko refer krta h jaha asynchrouns operation ko handle krne ke liye nested
+//   callback ka use kiya jata h(callback vehicle refers to a situation where nested callbacks are used to
+//   handle asynchronous operations)
+// * callback hell ki situation m code ko read, debug or maintain krna dificult hota h(in a callback hell
+//   situation, it is difficult to read, debug, and maintain the code)
+// * promises or async/await ka use krke callbak hell ko resolve kr skte h(callback hell can be resolved by
+//   using promises and async/await)
 
 
 
@@ -726,6 +1013,22 @@
 // * node.js single threaded hota h(node.js is a single threaded)
 
 
+//                               --------------  QNODEJSADVANTAGE  --------------
+// * non-blocking or event-driven arcitecture ki vajah se nodejs ki performance better h(nodejs has better 
+//   performance due to its non-blocking and event-driven architecture)
+// * nodejs m javascript language hoti h jo frontend ke liye bhi use hoti h(nodejs has javascript language 
+//   which is also used for frontend)
+// * nodejs m bhot se external packages available hote h(there are many external packages available in nodejs)
+// * nodejs ki ek large community h jo resources provide krti h(nodejs has a large community that provides 
+//   resources)
+// * nodejs real-time applications build krne ke liye capable h(nodejs is capable of building real-time 
+//   applications)
+// * nodejs horizontal or vertical scaling ko support krta h(nodejs supports horizontal and vertical scaling)
+// * nodejs m chrome ka v8 engine use hota h jiski performance better h(nodejs uses chrome's v8 engine which 
+//   has good performance)
+// * nodejs windows, macOS, linux pr run kr skta h(nodejs can run on Windows, macOS, Linux)
+
+
 //                                   --------------  QSERVER  --------------
 // * nodejs m server ek program hota h jo ki client ki request ko handle krta h or data ko process krke
 //   response send karta h(in nodejs the server is a program that handles the client's request and processes
@@ -752,7 +1055,7 @@
 //   version of a package)
 
 
-//                                 --------------  QRUNTIMEENVIRONMENT  --------------
+//                                --------------  QRUNTIMEENVIRONMENT  --------------
 // * runtime enviroment ek enviroment hota h jisme js ko web browser ke bhar execute kiya jata h(runtime 
 //   environment is the environment in which JS is executed outside the web browser)
 // * js program ko run krne ke liye is enviroment m sabhi tools, libreries or baki infrastrucure hote h(this 
@@ -865,11 +1168,29 @@
 //   event loop hota h jo un request ko accept krke check krta h ki request blocking/syncronus h ya
 //   non-blocking agr request non-blocking hoti h to event loop us request ko aage process kr deta h pr agr 
 //   request blocking hoti h to us request ko thread pool m forword kiya jata h thread pool m threads hote h
-//   jo non-blocking request ko process krte h(the client makes a request to the frontend the request is stored
+//   jo blocking request ko process krte h(the client makes a request to the frontend the request is stored
 //   in the event queue in nodejs, then nodejs has an event loop which accepts the request and checks whether
 //   the request is blocking or non-blocking, if the request is non-blocking then the event loop processes the
 //   request further and if the request is blocking then the event loop forwards the request to the thread pool
 //   which contains threads that process blocking requests)
+// * nodejs event driven or non-blocking i/o model pr work krta h(nodejs works on an event driven and non 
+//   blocking i/o model)
+
+
+// * non-blocking i/o operations ek asyncrounus operation hota h(non-blocking i/o operations are an 
+//   asynchronous operation)
+
+
+//                                 --------------  QEVENTDRIVEN  --------------
+// * event driven ek core principal h jisme event loop hota h jo non-blocking request ko handle krta h(event 
+//   driven is a core principle with an event loop that handles non blocking requests)
+
+
+//                                   --------------  QEVENTLOOP  --------------
+// * event loop nodejs m core concept h jo asynchronous operations ko handle krta h(the event loop is a core
+//   concept in nodejs that handles asynchronous operations)
+// * event loop continuesly event queue ko check krta h or tasks ko sequently execute krta rhta h(the event
+//   loop continuously checks event queue and executes tasks sequentially)
 
 
 //                                    --------------  QBLOCKING  --------------
@@ -935,7 +1256,12 @@
 
 
 //                                   --------------  QEXPRESS  --------------
-// * express is a framework for node.js
+// * express nodejs ka framework h jo nodejs application ko develop krne ke liye features ka set provide krta h
+//   (express is a framework of nodejs that provides set of features to develop nodejs applications)
+// * express nodejs application ko build krne ke process ko easy krta h(express makes the process of building
+//   nodejs applications easy)
+// * express http request response ko handle krne ko easy bnata h(express makes it easy to handle http request
+//   responses)
 
 
 //                              --------------  QMIDDLEWAREFUNCTION  --------------
@@ -951,6 +1277,19 @@
 //   and then a condition is given to the middleware function on the basis of which the request-response cycle
 //   is continue or end)
 // * authentication m iska use krte h(we use it in authentication)
+
+
+// * type of middleware - application-level middleware, router-level middleware, error-handling middleware,
+//   built-in middleware, third-party middleware, custom middleware
+//   application-level middleware - app.use() ka use krke in middlewares ko puri application pr apply krt h jo 
+//   hr request pr call hote h()
+//   router-level middleware - ye middlewares certain route pr apply hote h or un certain route pr request 
+//   ane pr call hote h()
+//   error-handling middleware - application m error ko handle krne ke liye in middleware ka use krte h()
+//   built-in middleware - express.json(), express.urlencoded(), express.static() express provide these 
+//   middleware
+//   third-party middleware - corse this middleware provided by third party
+//   custom middleware - these middleware functions are defined for specific tasks
 
 
 //                                --------------  QMVCPATTERN  --------------
@@ -991,7 +1330,7 @@
 
 //                                --------------  QAUTHORIZATION  --------------
 // * authorization user ki identity ya role ke bases pr user ke liye resources, actions, services access ya
-//   denying krne ka ek process hota h(Authorizations are the process of granting or accessing resources, 
+//   denying krne ka ek process hota h(authorizations are the process of granting or accessing resources, 
 //   actions, or services to a user based on the user's identity or role)
 // * isme sirf permission vale user hi resources ko access ya kuch specific action ko perform kr skte h(In this,
 //   only users with permission can access resources or perform some specific actions)
@@ -1000,8 +1339,122 @@
 // * authorization se pahle authentication ke through user ki identity verify hoti h(User's identity is 
 //   verified through authentication before authorization)
 // * authentication m user ki identity verify krne ke baad authorization m user ko kon konse access h determine
-//   krte h(After verifying the user's identity in authentication, authorization determines what access the 
+//   krte h(after verifying the user's identity in authentication, authorization determines what access the 
 //   user has)
+
+
+//                                   --------------  QREPL  --------------
+// * read-eval-print-loop ek environment h jaha hm javascript code ko write or execute kr skte h(the 
+//   read-eval-print-loop is an environment where we can write and execute javascript code)
+// * repl ka use code ko test, debugging, nodejs ke feature ko explore krne ke liye kiya jata h(repl is used 
+//   for testing code, debugging, and exploring features of nodejs)
+// * read - reads the input provided by the user
+// * eval - evaluates the code
+// * print - prints the result
+// * loop - returns to read's step
+// * REPL command - help, exit, clear, save, load
+// * node - this command is to activate repl
+// * .help - this command is to view all the commands of repl
+// * .exit - this command is to exit from repl
+
+
+//                                --------------  QCHILDPROCESS  --------------
+// * child process ek separate process hota h jise child process module se create ya manage kiya ja sakta h(a
+//   child process is a separate process that can be created or managed from the child process module)
+// * child process ka use parallel m task perform krne ke liye krte h(child processes are used to perform tasks
+//   in parallel)
+
+
+//                                  --------------  QSTREAM  --------------
+// * stream ek way h jisme data ko ek sath read ya write krne ke bjae chunks m handle kiya jata h(stream is a
+//   way in which data is handled in chunks instead of reading or writing it at once)
+// * stream ka use large amount of data process krne m kiya jata h(stream is used to process large amount of data)
+// * stream asynchronously work krta h(stream works asynchronously)
+// * stream buffer ka use as a temporary storage krte h(stream uses buffer as a temporary storage)
+// * 4 type of streams - 1. readable stream 2. writable stream 3. duplex stream 4. transform stream
+// 1. readable streams - fs.createReadStream - for file reading
+// 2. writable streams - fs.createWriteStream - for file writing
+// 3. duplex streams - for both reading and writing
+// 4. transform streams - a type of duplex stream where the output is computed based on the input
+
+
+//                                  --------------  QBUFFER  --------------
+// buffer binary data ke liye temporary storage area hote h(buffers are temporary storage areas for binary data)
+// buffer ka use raw binary data ko handle krne m kiya jata h(buffers are used to handle raw binary data)
+// buffer se data ke chunk ko process krte h(chunks of data are processed using buffer)
+// buffer ki ek fix size hoti h jo dynamically change nhi hoti(buffers have a fixed size which does not change
+// dynamically)
+// buffer nodejs m globally available hota h ise import krne ki need nhi hoti(buffers are globally available in
+// nodejs, hence there is no need to import them)
+// buffer.alloc() - it creates a buffer and allocates size to it
+// buffer.write() - it writes the data on buffer
+// buffer.toString() - it read data from the buffer and returned it
+// buffer.length - it returns the size of the buffer in bytes
+
+
+//                             --------------  QREACTORPATTERN  --------------
+// * ye ek design pattern hota h jiska use i/o operations ko handle krne ke liye krte h(it is a design pattern
+//   that is used to handle I/O operations)
+
+
+//                                --------------  QEVENTS  --------------
+// * events ek built-in module hota h jiske through hm eventEmitter class ko create krte h()
+
+
+//                             --------------  QEVENTEMITTER  --------------
+// * event emitter ek class hoti h jisse events ko emit/generate kiya jata h()
+// * .emit() - use this method for emit a event
+// * .on() - use this method for attach listener on event
+// * .off() - use this method for detach listener on event
+// * .once() - use this method for attach listener on single execution of the event
+
+
+//                               --------------  QCLUSTER  --------------
+// cluster ek built-in module hota h jisse nodejs application m multiple instances/child process run krte h
+// (cluster is a built-in module that runs multiple instances/child processes in a nodejs application)
+// cluster ki help se application pr workload km hota h(with the help of cluster, the workload on the 
+// application is reduced)
+// cluster m master process child process/worker ko manage krta h(in a cluster, the master process manages the
+// child process/worker)
+// .fork() - using this method we create child process/worker
+// each child process/worker nodejs ke instance ko run krta h(each child process/worker runs an instance of 
+// nodejs)
+// child process/workers same hi port share krte h pr request ko independly handle kr skte h(the child 
+// process/workers share the same port but can handle requests independently)
+// hr ek worker ek alg core pr chlta h(each worker runs on a different core)
+// worker crash hone pr master process new worker create krta h(in case of a worker crash, the master process
+// creates a new worker)
+
+
+//                              --------------  QWORKERTHREADS  --------------
+// * worker threads module hota h jisse multi-threading kr skte h(worker threads are a model that allows multi
+//   threading)
+// * worker threads se main thread ke parallel javscript code ko run krne ke liye multi thread create krte h
+//  (worker threads create multiple threads to run javascript code in parallel with main threads)
+
+
+// * nodejs by-defualt single threaded hota h kyuki ye event-driven or non-blocking i/o model ka use krta h
+//   (nodejs is single-threaded by default as it uses an event-driven and non-blocking i/o model)
+// * nodejs m multi threaded operation ke liye worker thread, child process, cluster ka use krte h(nodejs uses
+//   worker threads, child processes, clusters for multi-threaded operations)
+
+
+//                              --------------  QERRORHANDLING  --------------
+// * error handle krne ke liye try catch block, error handling middleware, promises ka use krte h(to handle 
+//   errors we use try catch blocks, error handling middleware, promises)
+
+
+//                            --------------  QERRORFIRSTCALLBACK  --------------
+// * error first callback ek design pattern hota h jiska use asynchrouns operation ko handle krne ke liye kiya
+//   jata h(error First callback is a design pattern used to handle asynchronous operations)
+// * error first callback m callback ka pahla argument ek error object hota h(in error first callback the first
+//   argument of the callback is an error object)
+// * error first callback m callback ke baki argument result hote h(in the error first callback the remaining
+//   arguments of the callback are the result)
+// * error first callback m asynchronous operation succesfull hone pr error object ki value null ya undefind 
+//   hoti h or fail hone pr error object m error ki detail hoti h(if the asynchronous operation in the first 
+//   callback succeeds then the value of the error object is null or undefined and if the asynchronous
+//   operation fails then the value of the error object is error)
 
 
 
@@ -1021,7 +1474,7 @@
 //                             --------------  QMONGODBFEATURES  --------------
 // * mongodb allows dynamic data structure
 // * schema less data structure which means one collection can hold diffrent type of document
-// * high performance beacause run operations fastly
+// * high performance because run operations fastly
 // * horizontal scalibility with help of sharding
 // * support multiple storage enigne
 
@@ -1031,20 +1484,20 @@
 //   phir mongodb server query ko storage engine m pass krta h jaha data ko read or write kiya jata h phir data
 //   database m store hota h(When the user makes a request on the frontend, the query goes from the frontend to 
 //   the backend and then from the backend to the MongoDB server Then mongodb server passes the query to the 
-//   storage engine where the data is read and write then data store in database.)
+//   storage engine where the data is read and write then data store in database)
 
 
 //                                --------------  QDATABASE  --------------
 // * database data ka collection hota h(database is a collection of data)
-// * two type of database - 1. relational database(sql) 2. non-relational database(nosql).
+// * two type of database - 1. relational database(sql) 2. non-relational database(nosql)
 
 
 //                              --------------  QSQLDATABASE  --------------
-// * isme data table ki form m store hota h(In this, data is stored in the form of table.)
+// * isme data table ki form m store hota h(in this, data is stored in the form of table)
 
 
 //                             --------------  QNOSLQDATABASE  --------------
-// * isme data document ki form m store hota h jise document database bhi khte h(In this, data is stored in the
+// * isme data document ki form m store hota h jise document database bhi khte h(in this, data is stored in the
 //   form of document which is also called document database)
 
 
@@ -1082,10 +1535,8 @@
 // * bson - it is a binary form of json
 
 
-//                               --------------  QSHARDING  --------------
-// * sharding large data set ko handle krne ke liye multiple machines m data destribute krne ka ek method h(
-//   sharding is a method for distributing data across multiple machines to handle large data set)
-// * sharding ek type ki horizontal scaling h(sharding is a type of horizontal scaling)
+// * mongodb supports these datatype - string, number, boolean, null, date, array, object, objectId,
+//   binary data
 
 
 //                           --------------  QCOMPARISONOPERATOR  --------------
@@ -1144,12 +1595,42 @@
 
 
 //                               --------------  QINDEXES  --------------
-// * indexes data structure hote h jo ki query ke efficient execution ko support krte h(indexes are data 
-//   structure that support efficient execution of queries)
+// * indexes data structure hote h jo collection ke data set ke small portion ko store rkhte h jisse data ko
+//   fastly access kiya ja skta h(indexes are data structures that store small portions of a collection of data
+//   sets, allowing the data to be accessed quickly)
 // * indexes m data ki copy contain hoti h(indexes contain copy of data)
 // * without indexes mongodb har ek document ko scan karta h(without indexes mongodb scans every document)
 // * ek collection m multiple indexes ho sakte h(multiple indexes can exist per collection)
 // * indexes ki help se query fast perform hoti h(with help of indexes query perform fastly)
+
+
+//                               --------------  QSHARDING  --------------
+// * sharding large data set ko handle krne ke liye multiple machines m data destribute krne ka ek method h
+//   (sharding is a method for distributing data across multiple machines to handle large data set)
+// * sharding ek type ki horizontal scaling h(sharding is a type of horizontal scaling)
+// * sharding se performance improve hoti h(sharding improves performance)
+
+// sharded cluster - a collection of shard
+// shard - shard ek mongodb instance/database h jo total data ka subset store krta h(shard is a mongodb 
+//         instance/database that stores a subset of the total data)
+// shard key - ye ek field hoti h jo determine krti h ki data ko shard m kese destribute krna h(this is a field
+//             that determines how the data is to be distributed across the shards)
+// config server - ye shard kiye gye cluster ke bare m metadata or configuration information store rkhte h
+//                 (these store metadata and configuration information about the shared cluster)
+// * jb document database m insert hota h to mognodb shard key ke bases pr determine krta h ki document kis
+//   shard ko belong krta h fir document uchit shard m insert hota h(when a document is inserted in the 
+//   database, mognodb determines on the basis of the shard key to which shard the document belongs, then the 
+//   document is inserted in the desired shard)
+
+
+//                               --------------  QREPLICATION  --------------
+// * replication ek replica set ke andr different server/node pr data ki copies create krna or maintain rkhne
+//   ka process h jisse data ki avability ko badaya ja ske(replication is the process of creating and  
+//   maintaining copies of data on different servers/nodes within a replica set to increase data availability)
+// * ek server down hone pr data another server pr available hota h(If one server is down the data is available
+//   on another server)
+// replica set - ye mongodb server ka group hota h jo same data set ko maintain rkhta h(these are groups of
+// mongodb servers that maintain the same data set)
 
 
 //                             --------------  QAGGREGATION  --------------
@@ -1174,3 +1655,31 @@
 // * mongodb varoius programing language jese c, c++, java, python, php, node.js, ruby ko supported drivers offer
 //   karta h(mongodb offer supported drivers for various programing language like c, c++, java, python, php,
 //   node.js, ruby)
+
+
+//                             --------------  QPOPULATE  --------------
+// * populate ek feature hota h jisse relational data ke sath easily work kiya ja sakta h(populate is a feature
+//   that allows you to work easily with relational data)
+// * populate m ek document dusre collection ke document ko reference krta h(a document in populate references
+//   a document in another collection)
+// * populate ki help se referenced document ko easily fetch kiya ja sakta h(with the help of populate the
+//   referenced document can be fetched easily)
+
+
+//                             --------------  QMONGOSHELL  --------------
+// * mongodb shell/mongosh ek javascript environment hota h jiska use mongodb se interact krne ke liye krte h
+//   (mongodb shell/mongosh is a javascript environment used to interact with mongodb)
+// * mongodb shell ka use database ko explore or query ko run krne ke liye krte h(we use the mongodb shell to
+//   explore the database and run queries)
+
+// * vertical or horizontal scaling se large amount of users ko handle krne ke liye system ki capacity or 
+//   performance ko increase krte h(vertical and horizontal scaling increases the capacity of the system to 
+//   handle large amounts of users)
+// * vertical scaling - 1. isme load ko handle krne ke liye single server ki capacity ko increase krte h jiske 
+//   liye storage ki capacity, ram, cpu cores ko bdate h ya faster disk drive, faster processer ka use krte h
+//   (in this, we increase the capacity of a single server to handle the load for which we increase the storage
+//   capacity, ram, cpu cores or use faster disk drive, faster processor)
+//   2. application ek hi server pr depend hoti h or isme server ki capacity ek limit tk hi increase kr skte h
+//   the application depends on a single server and the server capacity can be increased only up to a limit)
+// * horizontal scaling - isme load ko handle krme ke liye more server ko add krte h(in this we add more 
+//   servers to handle the load)
