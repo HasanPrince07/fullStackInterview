@@ -714,7 +714,7 @@
 // * useCallback m dependencie pass krte h jiske bases pr useCallback call hota h or ek memoized function
 //   return krta h jise child component m pass krte h(passes the dependency inside the useCallback on the
 //   basis of which the useCallback is called and returns a memoized function which is passed to the child
-//   component.)
+//   component)
 // * isse application ki performance better hoti h kyoki ye child component ko unneccesery re-render nhi krta
 //   jiske liye child component ko memo m rapped krte h (from callback The performance of the application is
 //   better because a child component does not have to be re-rendered manually,for which the child component
@@ -726,7 +726,7 @@
 //   component m khi show krva skte h(passes the dependency inside the useMemo on the basis of which the
 //   useMemo is called and returns a memoized value which we can show in component)
 // * isse application ki performance better hoti h kyoki ye unneccesery code ko render nhi krta(This
-//   improves the performance of the application because it does not render the unneccesery code.)
+//   improves the performance of the application because it does not render the unneccesery code)
 
 
 //                                    --------------  QUSEID  --------------
@@ -995,6 +995,19 @@
 // * 1. nodeJS install krte h kyuki react library install krne ke liye npm ki jarurat hoti h(Install NodeJS
 //   on the computer because we need npm to install the React library)
 // * 2. terminal m npx create-react-app projectname commmand run krte h(create-react-app is a package)
+
+
+//                                --------------  QLAZYLOADING  --------------
+// * lazy loading technique h jiski help se react application ki performance better krte h(lazy loading is a
+//   technique that helps to improve the performance of react application)
+// * lazy loading m component ko tabhi load kiya jata h jb load krne ki requirment ho(in lazy loading, the
+//   component is loaded only when there is a need to load it)
+// * lazy loading initial load time ko reduce krta h(lazy loading reduces the initial load time)
+// * lazy - ye ek built-in function hota h jisme lazy component ko import krte h(this is a built-in function
+//   in which we import lazy component)
+// * suspense - ye ek component hota h jisme fallback attricute hota h(this is a component that has a fallback
+//   attribute)
+// * fallback - loader show karta h(the loader shows)
 
 
 
