@@ -1470,6 +1470,18 @@
 //   operation fails then the value of the error object is error)
 
 
+//                                 --------------  QCORS  --------------
+// * cors stands for cross origin resource sharing
+// * cors ek mechanism h jo ye specify krta h ki konsa domain server ke resources ko access kr skta h(CORS is a
+//   mechanism that specifies which domains can access the server's resources)
+// * nodejs m cors ka use cross origin request ko handle krne ke liye kiya jata h(in nodejs cors is used to 
+//   handle cross origin requests)
+// * browser m same-origin policy lagu hoti h jisse ek domain pr running web application dusre domain pr 
+//   request nhi kr skti jbtk server pr cors ka use krke origin ko allow na kiya jae(the same-origin policy is
+//   applied in the browser so that a web application running on one domain cannot request another domain while
+//   the origin is not allowed by using the cors on the server)
+
+
 
 
 
