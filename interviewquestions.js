@@ -237,8 +237,10 @@
 //   decrement in parenthesis then write statement in curly bracket)
 // * for-in - iska use object ki values ko on-by-one get krne ke liye kiya jata h(it is use for get values
 //   of object one-by-one)
+//   example - for(const key in obj_name){ console.log(obj_name.key) }
 // * for-of - iska use array ki values ko on-by-one get krne ke liye kiya jata h(it is use for get values
 //   of array one-by-one)
+//   example - for(const value of array_name){ console.log(value) }
 // * break - condition false hone se phle loop se bhar niklne ke liye iska use krte h(It is used to break out
 //   of the loop before the condition fails)
 // * continue - is keyword se loop ke kisi particuler value ko skip krke loop ko continue rkh skte h(With
