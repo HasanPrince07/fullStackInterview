@@ -248,8 +248,9 @@
 
 
 //                                 --------------  QFUNCTIONS  --------------
-// * function block of code hote h jinse task perform krte h function ko call krne pr code execute hote h(
-//   function is a block of code which we create for perform task and it execute when we call it)
+// * function reusable block of code hote h jinse task perform krte h function ko call krne pr code execute
+//   hote h(function is a reusable block of code which we create for perform task and it execute when we call 
+//   it)
 // * parameter - ye varirable ke name hote h jinhe function m define krte h(it is a name of variable which
 //   we define inside the function)
 // * arguments - function ko pass ki jane vali value(it is a value which we pass to a function)
@@ -267,12 +268,14 @@
 // * ye hoisting hota h(it is hoisting)
 // * ise regular function, normal function or function statment bhi kaha jaata h(It is also called regular 
 //   function, normal function and function statement)
+// * syntax - function function_name(){ console.log("call") }
 
 
 //                              --------------  QFUNCTIONEXPRESSION  --------------
 // * is function ka name nhi hota ise ek variable m store krte h(This function does not have a name, it is
 //   stored in a variable)
 // * ye hoisting nhi hote h(it is not hoisting)
+// * syntax - var variable_name = function (){ console.log("call") }
 
 
 //                            --------------  QNAMEDFUNCTIONEXPRESSION  --------------
@@ -293,6 +296,7 @@
 //   their own this keyword it refers to its parent this keyword)
 // * iska khudka arguments object nhi hota(arrow functions do not have their own argument object)
 // * isko as a constructor use nhi kr skte h(cannot be used as a constructor)
+// * syntax - var variable_name = () => { console.log("call") }
 
 
 //                             --------------  QCALLBACKFUNCTION  --------------
