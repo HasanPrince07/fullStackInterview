@@ -586,9 +586,8 @@
 
 
 //                           --------------  QFUNCTIONCOMPONENTS  --------------
-// * function component ek simple javascript function h jo props ko as a argument accept krta h or react
-//   element/jsx return krta h(function component is a simple javascript function that accept props as a
-//   argument and return react element/jsx)
+// * function component ek simple javascript function h(function component is a simple javascript function)
+// * inhe stateless component bhi kahte h(these are also called stateless components)
 // * isme constructor use nhi hota(there is no constructor in class components)
 // * isme render method require nhi hota h(there is no render method require in function component)
 // * hooks ka use krte h life cycle method,state,pure component etc. feature ka use krne ke liye(we use hooks
@@ -596,8 +595,11 @@
 
 
 //                            --------------  QCLASSCOMPONENTS  --------------
-// * isme constructor use hota(we use constructor in class components)
-// * ise stateful component bhi khte h kyoki isme state or logic defined krte h(also known as a statful
+// * class component ek es6 class hoti h(class component is a es6 class)
+// * class component reactjs ke early version m introduce huva(class component introduced in early version of
+//   reactjs)
+// * isme constructor m state define krte h(in this we define the state in the constructor)
+// * ise statefull component bhi khte h kyuki isme state or logic defined krte h(also known as a statful
 //   component because we can defined state and logic in class component)
 // * react element(jsx) return krne ke liye render method require hota h(render method require for return
 //   react element(jsx))
