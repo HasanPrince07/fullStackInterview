@@ -535,7 +535,7 @@
 // * ise facebook community ne develop kiya h(facebook develops react js)
 // * reactjs application ko kei component m divide krte jin component ko reuse kr skte h(we divide the react
 //   js application into components that can be reused)
-// * react js ka current version - 18.2.0
+// * react js ka current version - 19.1.0
 // * react js release date is 29 may 2013
 
 
