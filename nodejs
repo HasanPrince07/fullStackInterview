@@ -373,17 +373,18 @@
 
 
 //                                  --------------  QBUFFER  --------------
-// buffer binary data ke liye temporary storage area hote h(buffers are temporary storage areas for binary data)
-// buffer ka use raw binary data ko handle krne m kiya jata h(buffers are used to handle raw binary data)
-// buffer se data ke chunk ko process krte h(chunks of data are processed using buffer)
-// buffer ki ek fix size hoti h jo dynamically change nhi hoti(buffers have a fixed size which does not change
-// dynamically)
-// buffer nodejs m globally available hota h ise import krne ki need nhi hoti(buffers are globally available in
-// nodejs, hence there is no need to import them)
-// buffer.alloc() - it creates a buffer and allocates size to it
-// buffer.write() - it writes the data on buffer
-// buffer.toString() - it read data from the buffer and returned it
-// buffer.length - it returns the size of the buffer in bytes
+// * buffer binary data ke liye temporary storage area hote h(buffers are temporary storage areas for binary
+//   data)
+// * buffer ka use raw binary data ko handle krne m kiya jata h(buffers are used to handle raw binary data)
+// * buffer se data ke chunk ko process krte h(chunks of data are processed using buffer)
+// * buffer ki ek fix size hoti h jo dynamically change nhi hoti(buffers have a fixed size which does not 
+//   change dynamically)
+// * buffer nodejs m globally available hota h ise import krne ki need nhi hoti(buffers are globally available
+//   in nodejs, hence there is no need to import them)
+// * buffer.alloc() - it creates a buffer and allocates size to it
+// * buffer.write() - it writes the data on buffer
+// * buffer.toString() - it read data from the buffer and returned it
+// * buffer.length - it returns the size of the buffer in bytes
 
 
 //                             --------------  QREACTORPATTERN  --------------
@@ -404,20 +405,20 @@
 
 
 //                               --------------  QCLUSTER  --------------
-// cluster ek built-in module hota h jisse nodejs application m multiple instances/child process run krte h
-// (cluster is a built-in module that runs multiple instances/child processes in a nodejs application)
-// cluster ki help se application pr workload km hota h(with the help of cluster, the workload on the 
-// application is reduced)
-// cluster m master process child process/worker ko manage krta h(in a cluster, the master process manages the
-// child process/worker)
-// .fork() - using this method we create child process/worker
-// each child process/worker nodejs ke instance ko run krta h(each child process/worker runs an instance of 
-// nodejs)
-// child process/workers same hi port share krte h pr request ko independly handle kr skte h(the child 
-// process/workers share the same port but can handle requests independently)
-// hr ek worker ek alg core pr chlta h(each worker runs on a different core)
-// worker crash hone pr master process new worker create krta h(in case of a worker crash, the master process
-// creates a new worker)
+// * cluster ek built-in module hota h jisse nodejs application m multiple instances/child process run krte h
+//   (cluster is a built-in module that runs multiple instances/child processes in a nodejs application)
+// * cluster ki help se application pr workload km hota h(with the help of cluster, the workload on the 
+//   application is reduced)
+// * cluster m master process child process/worker ko manage krta h(in a cluster, the master process manages
+//   the child process/worker)
+// * .fork() - using this method we create child process/worker
+// * each child process/worker nodejs ke instance ko run krta h(each child process/worker runs an instance of 
+//   nodejs)
+// * child process/workers same hi port share krte h pr request ko independly handle kr skte h(the child 
+//   process/workers share the same port but can handle requests independently)
+// * hr ek worker ek alg core pr chlta h(each worker runs on a different core)
+// * worker crash hone pr master process new worker create krta h(in case of a worker crash, the master process
+//   creates a new worker)
 
 
 //                              --------------  QWORKERTHREADS  --------------
