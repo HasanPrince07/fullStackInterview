@@ -622,12 +622,14 @@
  
 
 //                             --------------  QPURECOMPONENT  --------------
-// * ye react ka ek feature h(it is a feature of react)
-// * jb state ya props ki value change hoti h to pure component re-render hota h(pure component re-render
-//   when state or props value change)
-// * isse application ki performance better hoti(This would have improved the performance of the application)
-// * iska use sirf class component m krte h(Its only done in class component)
-// * function component m iski jagah useMemo ka use krte h(In function components,we use useMemo instead)
+// * pure component ek class component hota h jo ki unnecessery re-render ko avoid krta h(the pure component is
+//   a class component which avoids unnecessary re-rendering)
+// * ye previous props ya state ko current props ya state se compare krta h agr props ya state m koi changes 
+//   detect na ho to component re-render nhi hota(it compares previous props or state with the current props or 
+//   state. if changes to the props or state are not detected, the component is not re-rendered)
+// * isse application ki performance better hoti(this would have improved the performance of the application)
+// * functional component m pure component ki functionality ko use krne ke liye useMemo ka use krte h(in 
+//   functional components, we use useMemo to access the functionality of the pure component)
 
 
 //                                 --------------  QHOC  --------------
