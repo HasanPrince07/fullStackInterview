@@ -81,13 +81,15 @@
 
 
 //                           --------------  QCONTROLLEDCOMPONENT  --------------
-// * ye ase component hote h jinki input field ko react ki state se control krte h(These are such components
-//   whose input fields are controlled by the state of React)
+// * ye form ke element(input, textarea, select) hote h jinki value react state dwara control hoti h(these are 
+//   form elements (input, textarea, select) whose value is controlled by react state)
 
 
 //                          --------------  QUNCONTROLLEDCOMPONENT  --------------
-// * ye ase component hote h jinki input field ko dom ya useRef hook se control krte h(These are such
-//   components whose input fields are controlled by the dom or useRef hook)
+// * ye form ke element(input, textarea, select) hote h jinki value dom ya useref dwara control hoti h(these
+//   are form elements (input, textarea, select) whose value is controlled by the DOM or useref)
+// * ref ka use krke form ke element ki value ko access kiya jata h(the value of a form element is accessed 
+//   using ref)
  
 
 //                             --------------  QPURECOMPONENT  --------------
