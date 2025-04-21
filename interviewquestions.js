@@ -336,8 +336,8 @@
 //   class functions refer to the concept in which functions are treated as values)
 // * first class function m hm function ko variable m store kr skte h(in first class function we can store the
 //   function in a variable)
-// * first class function m hm function ko as arguments usre function m pass krte h(in first class function, we
-//   pass the function as arguments to another function)
+// * first class function m hm function ko as arguments dusre function m pass krte h(in first class function,
+//   we pass the function as arguments to another function)
 // * first class function m hm function ko kisi dusre function se return kr skte h(in first class function we
 //   can return a function from another function)
 
@@ -533,7 +533,7 @@
 //   web application)
 // * isse single page application bnate h(we create single page web application with help of reactjs)
 // * ise facebook community ne develop kiya h(facebook develops react js)
-// * reactjs application ko kei component m divide krte jin component ko reuse kr skte h(we divide the react
+// * reactjs application ko kei component m divide krte h jin component ko reuse kr skte h(we divide the react
 //   js application into components that can be reused)
 // * react js ka current version - 19.1.0
 // * react js release date is 29 may 2013
@@ -645,7 +645,7 @@
 //   the class component of React like state,life cycle method,pure component etc. we can do the same work
 //   in the function component using hooks)
 // * function based component m react ki additional functionality ko use krne ke liye hooks ka use krte h
-//   (We use hooks to use additional functionality of React in function based components.)
+//   (We use hooks to use additional functionality of React in function based components)
 // * hooks ko class component m use nhi kr skte(we can not use hooks in class component)
 // * hooks ko react ke 16.8 version m introduce kiya gya tha(hooks are introduced in react 16.8 version)
 
@@ -657,7 +657,7 @@
 
 
 //                             --------------  QUSESTATE  --------------
-// * useState hook ka use functional component m state/handle manage krne ke liye krte h(useState use for
+// * useState hook ka use functional component m state handle/manage krne ke liye krte h(useState use for
 //   state management/handle in functional component)
 // * useState ek array return krta h jisme do value hoti 1.current state 2.function - function se current
 //   state ko update krte h or current state ki initial value useState ke round bracket m assign krte h(it
@@ -695,9 +695,9 @@
 // * useRef mutable variable create krta h jo component ko re-render nhi krta(it create a mutable
 //   variable which will not re-render the component)
 // * useRef se dom element ko direct access kr skte h(we can access a dom element directly)
-// * useRef ek object return krta h jisme current name ki property hoti h.jiski value useRef ke bracket m
+// * useRef ek object return krta h jisme current name ki property hoti h jiski value useRef ke bracket m
 //   assign krte h(useref returns an object that has a property named current. whose value is assigned in
-//   the brackets of useref.)
+//   the brackets of useref)
 // * current property se useRef ki value ko access krte h(access useRef value with help of current)
 // * element m ref attribute add krke us element ko directly access kr skte h(we can access that element
 //   directly by adding an ref attribute to the element)
@@ -992,7 +992,7 @@
 // * ager user non-exist url ko hit kare to ham page not found ka component render karte h jiske liye route
 //   ke path m * value pass krte h(if user hits non-exists url then we render page not found component for
 //   which we pass * value in path of route)
-// * Link - is component ka use ek page se dusre page pr navigate karne ke liye karte h(This component is
+// * Link - is component ka use ek page se dusre page pr navigate karne ke liye karte h(this component is
 //   used to navigate from one page to another)
 // * NavLink - is component se ham jis bhi page pr hote h us NavLink component m ek active name ki class add
 //   ho jati h or us active class ko target karke ham specific style apply kr sakte h(From this component,
@@ -1017,7 +1017,7 @@
 // * lazy loading initial load time ko reduce krta h(lazy loading reduces the initial load time)
 // * lazy - ye ek built-in function hota h jisme lazy component ko import krte h(this is a built-in function
 //   in which we import lazy component)
-// * suspense - ye ek component hota h jisme fallback attricute hota h(this is a component that has a fallback
+// * suspense - ye ek component hota h jisme fallback attribute hota h(this is a component that has a fallback
 //   attribute)
 // * fallback - loader show karta h(the loader shows)
 
@@ -1169,7 +1169,7 @@
 
 
 //                                 --------------  QHTTPMODULE  --------------
-// * ye ek built-in module hota h jisse node.js m data ko http(hyper text tranfer protocole) pr transfer kr
+// * ye ek built-in module hota h jisse node.js m data ko http(hyper text transfer protocole) pr transfer kr
 //   skte h(it is a built-in module which we use for transfer data over http)
 // * is module se server create krte h(create server from this module)
 
@@ -1404,17 +1404,18 @@
 
 
 //                                  --------------  QBUFFER  --------------
-// buffer binary data ke liye temporary storage area hote h(buffers are temporary storage areas for binary data)
-// buffer ka use raw binary data ko handle krne m kiya jata h(buffers are used to handle raw binary data)
-// buffer se data ke chunk ko process krte h(chunks of data are processed using buffer)
-// buffer ki ek fix size hoti h jo dynamically change nhi hoti(buffers have a fixed size which does not change
-// dynamically)
-// buffer nodejs m globally available hota h ise import krne ki need nhi hoti(buffers are globally available in
-// nodejs, hence there is no need to import them)
-// buffer.alloc() - it creates a buffer and allocates size to it
-// buffer.write() - it writes the data on buffer
-// buffer.toString() - it read data from the buffer and returned it
-// buffer.length - it returns the size of the buffer in bytes
+// * buffer binary data ke liye temporary storage area hote h(buffers are temporary storage areas for binary
+//   data)
+// * buffer ka use raw binary data ko handle krne m kiya jata h(buffers are used to handle raw binary data)
+// * buffer se data ke chunk ko process krte h(chunks of data are processed using buffer)
+// * buffer ki ek fix size hoti h jo dynamically change nhi hoti(buffers have a fixed size which does not 
+//   change dynamically)
+// * buffer nodejs m globally available hota h ise import krne ki need nhi hoti(buffers are globally available
+//   in nodejs, hence there is no need to import them)
+// * buffer.alloc() - it creates a buffer and allocates size to it
+// * buffer.write() - it writes the data on buffer
+// * buffer.toString() - it read data from the buffer and returned it
+// * buffer.length - it returns the size of the buffer in bytes
 
 
 //                             --------------  QREACTORPATTERN  --------------
@@ -1435,27 +1436,27 @@
 
 
 //                               --------------  QCLUSTER  --------------
-// cluster ek built-in module hota h jisse nodejs application m multiple instances/child process run krte h
-// (cluster is a built-in module that runs multiple instances/child processes in a nodejs application)
-// cluster ki help se application pr workload km hota h(with the help of cluster, the workload on the 
-// application is reduced)
-// cluster m master process child process/worker ko manage krta h(in a cluster, the master process manages the
-// child process/worker)
-// .fork() - using this method we create child process/worker
-// each child process/worker nodejs ke instance ko run krta h(each child process/worker runs an instance of 
-// nodejs)
-// child process/workers same hi port share krte h pr request ko independly handle kr skte h(the child 
-// process/workers share the same port but can handle requests independently)
-// hr ek worker ek alg core pr chlta h(each worker runs on a different core)
-// worker crash hone pr master process new worker create krta h(in case of a worker crash, the master process
-// creates a new worker)
+// * cluster ek built-in module hota h jisse nodejs application m multiple instances/child process run krte h
+//   (cluster is a built-in module that runs multiple instances/child processes in a nodejs application)
+// * cluster ki help se application pr workload km hota h(with the help of cluster, the workload on the 
+//   application is reduced)
+// * cluster m master process child process/worker ko manage krta h(in a cluster, the master process manages the
+//   child process/worker)
+// * .fork() - using this method we create child process/worker
+// * each child process/worker nodejs ke instance ko run krta h(each child process/worker runs an instance of 
+//   nodejs)
+// * child process/workers same hi port share krte h pr request ko independly handle kr skte h(the child 
+//   process/workers share the same port but can handle requests independently)
+// * hr ek worker ek alg core pr chlta h(each worker runs on a different core)
+// * worker crash hone pr master process new worker create krta h(in case of a worker crash, the master process
+//   creates a new worker)
 
 
 //                              --------------  QWORKERTHREADS  --------------
 // * worker threads module hota h jisse multi-threading kr skte h(worker threads are a model that allows multi
 //   threading)
 // * worker threads se main thread ke parallel javscript code ko run krne ke liye multi thread create krte h
-//  (worker threads create multiple threads to run javascript code in parallel with main threads)
+//   (worker threads create multiple threads to run javascript code in parallel with main threads)
 
 
 // * nodejs by-defualt single threaded hota h kyuki ye event-driven or non-blocking i/o model ka use krta h
