@@ -104,10 +104,12 @@
 
 
 //                                 --------------  QHOC  --------------
-// * High Order Component
-// * ye component logic ko reuse krne ki advance technique h(it is advance technique for reuse component
-//   logic)
-// * ye as a input ek component access krta h or as a output ek component return krta h
+// * high order component ek pattern/technique h component logic ko reuse krne ka(high order component is a
+//   pattern/technique for reusing component logic)
+// * ye ek function h jo component ko as a argument leta h or component return krta h(this is a function that
+//   takes a component as an argument or returns the component)
+// * hoc functionality add krke new component return krta h(the hoc returns a new component by adding 
+//   functionality)
 
 
 //                               --------------  QHOOKS  --------------
