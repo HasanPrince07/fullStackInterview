@@ -124,9 +124,10 @@
 
 
 //                             --------------  QTYPEHOOKS  --------------
-// * react provide 15 type of hooks in react 18 version - 1.useState 2.useEffect 3.useContext 4.useRef
+// * react provide 17 type of hooks in react 18 version - 1.useState 2.useEffect 3.useContext 4.useRef
 //   5.useLayoutEffect 6.useReducer 7.useCallback 8.useMemo 9.useId 10.useDebugValue 11.useDeferredValue
-//   12.useImperativeHandle 13.useInsertionEffect 14.useSyncExternalStore 15.useTransition
+//   12.useImperativeHandle 13.useInsertionEffect 14.useSyncExternalStore 15.useTransition 16.useActionState
+//   17.useOptimistic
 
 
 //                             --------------  QUSESTATE  --------------
