@@ -695,13 +695,13 @@
 
 
 //                                --------------  QUSEREF  -------------- 
-// * useRef mutable variable create krta h jo component ko re-render nhi krta(it create a mutable
-//   variable which will not re-render the component)
-// * useRef se dom element ko direct access kr skte h(we can access a dom element directly)
-// * useRef ek object return krta h jisme current name ki property hoti h jiski value useRef ke bracket m
-//   assign krte h(useref returns an object that has a property named current. whose value is assigned in
-//   the brackets of useref)
-// * current property se useRef ki value ko access krte h(access useRef value with help of current)
+// * useRef hook se dom element ko direct access kr skte h(useRef hook allows direct access to dom element)
+// * useRef se mutable value store krte h jo change hone pr component ko re-render nhi krte h(useRef stores 
+//   mutable value which does not re-render the component if it changes)
+// * useRef hook ek current property wali ref object return krta h(useRef hook returns a ref object with a
+//   current property)
+// * current property mutable value store rkhti h jo change hone pr component ko re-render nhi krti h(current
+//   property stores mutable value which does not re-render the component if it changes)
 // * element m ref attribute add krke us element ko directly access kr skte h(we can access that element
 //   directly by adding an ref attribute to the element)
 
