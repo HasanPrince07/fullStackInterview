@@ -670,8 +670,8 @@
 
 
 //                              --------------  QUSEEFFECT  --------------
-// * component render hone pr ya state update hone pr useEffect call hota h(useffect is called when the
-//   component is rendered or state is updated)
+// * component render hone pr ya state update hone pr useEffect asynchronously call hota h(useffect is called 
+//   asynchronously when the component is rendered or state is updated)
 // * useEffect m function or dependencie pass krte h.dependencie optional hoti h.do trah ki dependencie pass
 //   kr skte h 1.empty array([]) - jb component render hota h tb ek bar useEffect call hoga 2.array with
 //   variable - first time render krne pr phir jb state update krenge h tb useEffect call hoga.jo code
@@ -680,12 +680,11 @@
 //   useffect will be called once.2.array with variable - useEffect will call when component render first
 //   time and agian when the state is updated.The code we write inside the function that code is executed)
 // * jb bhi component render hone ke bad ya state update hone pr koi code execute krni ho jese alert show
-//   krna ya setTimeout use krna tb ueseEffect ka use krenge ya data fetch krna ho ya componentDidMount,
-//   componentDidUpdate,componentWillMount jese feature ka use functional component m krna ho tb bhi
-//   useEffect ka use krenge(Whenever you want to execute any code like show alert,setTimeout after the
-//   component is rendered or after the state is updated, then you will use useEffect or we want fetch data
-//   or we want to use feature like componentDidMount,componentDidUpdate,componentWillMount in functional
-//   component then we will use useEffect)
+//   krna, setTimeout use krna, data fetch krna, componentDidMount, componentDidUpdate, componentWillMount jese
+//   feature ka use functional component m krna ho tb useEffect ka use krenge(whenever any code needs to be
+//   executed after the component is rendered or after the state is updated, such as showing an alert, using
+//   setTimeout, fetching data, using componentDidMount, componentDidUpdate, componentWillMount, etc., if any
+//   feature needs to be used in a functional component, then useEffect will be used)
 
 
 //                              --------------  QUSECONTEXT  --------------
