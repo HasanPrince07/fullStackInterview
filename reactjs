@@ -177,8 +177,8 @@
 
 
 //                              --------------  QUSELAYOUTEFFECT  -------------- 
-// * useLayoutEffect same useEffect ki tarah hota h pr ye screen update hone se phle syncronously call hota
-//   h(UseLayoutEffect is similar to useEffect but it is called synchronously before the screen is updated) 
+// * ye hook useEffect ki tarah hota h but browser pr screen show hone se phle synchronusly run hota h(this 
+//   hook is similar to a simple effect but runs synchronously before the screen is shown on the browser) 
 
 
 //                                --------------  QUSEREDUCER  --------------
