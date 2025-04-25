@@ -272,18 +272,19 @@
 //   props)
 // * props immutable hote h(props are immutable)
 // * props ko child component m as a parameter access krte h(we access props as a parameter)
-// * class component m this keyword se props access krte h(we access props with help of this keyword in class
-//   component)
+// * class component m this.props or functional component m direct props access krte h(we get props from 
+//   this.props in class component and direct props in functional component)
 
 
 //                                 --------------  QSTATE  --------------
 // * state m component ka data store krte h(we store data in state)
+// * state component ke andr manage ki jati h(state is managed inside the component)
 // * state mutable hota h(state are mutable)
 // * state update hone pr component re-render hota h(Component re-renders when state is updated)
 // * class component m constructor m state define krte h(we can defined state in constructor in class
 //   component)
-// * functional component m useState hook se state defined krte h(we can defined state in functional
-//   component with help of useState hook)
+// * class component m this.state se or functional component m useState hook se state access krte h(we can get
+//   state from this.state in class component and useState hook in functional component)
 
 
 //                                 --------------  QIMMUTABLE  --------------
