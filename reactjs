@@ -250,24 +250,21 @@
 
 
 //                               --------------  QLIFECYCLEMETHOD  --------------
-// * component ko create krna,update krna,remove krna component ki life cycle hoti h(creating, updating,
-//   removing components is the life cycle of the component)
-// * three phase - 1.mounting 2.updating 3.unmounting
-// * life cycle methods - constructor,render,componentDidMount,componentShouldUpdate,componentDidUpdate,
-//   componentWillUnmount
-// * constructor - component render hone se phle ye method call hoga(this method will be called before the
-//   component is rendered)
-// * render - ye jsx ko render krta h or component update hone pr bhi ye call hota h(it render jsx and This
-//   call happens even when the component is updated)
-// * componentDidMount - component ke render hone ke bad ye method call hota h(this method is called after
-//   the component is rendered)
-// * componentShouldUpdate - is method se hm decide krte h ki component re-render hona chahiye ya nhi true
-//   return krne pr component update hoga nhi to nhi hoga(with this method, we decide whether the component
-//   should be re-render or not, the component will be re-render if it returns true, otherwise it will not) 
-// * componentDidUpdate - component ke update hone ke bad ye method call hoga(The componentDidUpdate method
-//   is called after the component is updated in the DOM)
-// * componentWillUnmount - component ko dom se remove krne se phle ye method call hota h(this method is
-//   called when the component is about to be removed from the DOM)
+// * ye special methods hote h jinhe component ki life ke different stages pr call kiya jata h(these are special
+//   methods that are called at different stages of the component's life)
+// * lifecycle method ka use class component m hota h(lifecycle method is used in class component)
+// * ek component ki lifecycle ki 3 stage hoti h - mounting, updating, unmounting
+// * mounting - the phase when a component is created and inserted into the dom
+// * updating - the phase when the component's state or props change, leading to re-render
+// * unmounting - the phase when a component is removed from the dom
+// * constructor - initializes the component and sets up state
+// * render - returns jsx in mounting phase, renders the updated jsx in updating phase
+// * componentDidMount - invoked after the component is inserted into the DOM. Commonly used for initializing
+//   API calls
+// * shouldComponentUpdate - determine krta h ki component re-render hona chahiye ya nahi(determines whether 
+//   the component should re-render)
+// * componentDidUpdate - useful for performing side effects after updates
+// * componentWillUnmount -  invoked before the component is removed from the DOM
 
 
 //                                 --------------  QPROPS  --------------
