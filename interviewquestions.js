@@ -829,17 +829,20 @@
 
 
 //                                   --------------  QJSX  --------------
-// * javascript xml/javascript extension
+// * jsx stands for javascript xml/javascript extension
+// * jsx js ke liye syntax extension h jiska use reactjs m krte h(jsx is a syntax extension for js which is 
+//   used in reactjs)
 // * jsx se react application likhna easy hota h(it easy to write react application with help of jsx)
 // * ye html ki tarah dikhti h isme html or js ko sath m likh skte h(it look like html and we can write html
 //   with js)
 // * isme js likhne ke liye {} use krte h(use {} for using js)
-// * jsx rules - 1.sbhi elements ko parent div ya fragment m wrapped krte h(close all element in parent div
-//   or fragment)
-//   2.sabhi tags ko close krte h(close all tags)
-//   3.class attribute ki jagah className attribute ka use krte h(use the classname attribute instead of the
-//   class attribute)
-//   4.anchor tag ki jagah Link tag ka use krte h(use Link tag instead of anchor tag)
+// * jsx rules - 1. sbhi elements ko parent div ya fragment m wrapped krte h(close all element in parent div
+//      or fragment)
+//   2. sabhi tags ko close krte h(close all tags)
+//   3. attributes m camelCase ka use krte h jese class, for attribute ki jagah className, htmlFor attribute ka
+//      use krte h(we use camelCase in attributes, like instead of class, for attribute we use className and 
+//      htmlFor attribute)
+//   4. anchor tag ki jagah Link tag ka use krte h(use Link tag instead of anchor tag)
 
 
 //                                --------------  QNOTIFICATION  --------------
