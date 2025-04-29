@@ -462,3 +462,8 @@
 //   request nhi kr skti jbtk server pr cors ka use krke origin ko allow na kiya jae(the same-origin policy is
 //   applied in the browser so that a web application running on one domain cannot request another domain while
 //   the origin is not allowed by using the cors on the server)
+
+
+//                                 --------------  QTHREAD  --------------
+// * thread kisi process ke andr execution ki unit hoti h(a thread is a unit of execution within a process)
+// * thread ko operating system dwara execute kiya jata h(threads are executed by the operating system)
