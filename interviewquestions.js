@@ -1498,6 +1498,11 @@
 //   the origin is not allowed by using the cors on the server)
 
 
+//                                 --------------  QTHREAD  --------------
+// * thread kisi process ke andr execution ki unit hoti h(a thread is a unit of execution within a process)
+// * thread ko operating system dwara execute kiya jata h(threads are executed by the operating system)
+
+
 
 
 
