@@ -467,3 +467,39 @@
 //                                 --------------  QTHREAD  --------------
 // * thread kisi process ke andr execution ki unit hoti h(a thread is a unit of execution within a process)
 // * thread ko operating system dwara execute kiya jata h(threads are executed by the operating system)
+
+
+//                                 --------------  QNODEMON  --------------
+// * ye ek external package h jo application m changes ko detect krke application ko automatically restart krta
+//   h(this is an external package that detects changes in the application and automatically restarts the
+//   application)
+// * jb bhi application m change krke file ko save krte h ye khudse server/application ko restart krta h
+//   (whenever you make changes to the application and save the file, it automatically restarts the 
+//   server/application)
+// * isme manually application ko restart krne ki need nahi hoti(there is no need to manually restart the
+//   application)
+// * command for run application with nodemon instead of nodejs - nodemon file_name
+
+
+//                                --------------  QMONGOOSE  --------------
+// * this is an external library through which we can interact with mongodb
+// * mongoose provide strucure way to manage mongodb documents
+
+
+//                                 --------------  QMULTER  --------------
+// * multer is an external library through which we can upload files
+
+
+// * const express = require("express") - import express framework for building web applications
+// * const cors = require("cors") - import cors middleware to enable cors
+// * const mongoose = require("mongoose") - import mongoosea to intract with mongodb
+// * require("dotenv").config() - used to load environment variables from .env file
+// * app.use(express.json()) - this middleware parses incoming json request and makes them accessible via 
+//   req.body
+// * app.use(cors(...)) - restricts access to the server from specific origins for security
+// * mongoose.connect(...connection_string) - connects to the mongodb database using the connection string
+//   stored in the .env file
+// * app.use(express.static("public")) - serves static files from the public directory
+// * userRouter = require("./router/user") - router for handling /user endpoints
+// * app.use("/user", userRouter) - requests to /user and its subpaths are handled by this router
+// * app.listen(...) - starts a server on the given port
