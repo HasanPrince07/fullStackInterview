@@ -1524,6 +1524,36 @@
 // * multer is an external library through which we can upload files
 
 
+//                               --------------  QNODEMAILER  --------------
+// * nodemailer is an external library through which we send emails
+// * we send emails using smtp (simple mail transfer protocol) server
+// * We can also send attachments or html content with the email
+
+
+//                                 --------------  QBCRYPT  --------------
+// * bcrypt is an external package which is used to hash the password(convert it into unreadable format)
+// * by using bcrypt we protect the user's password and ensure that the password is stored securely in the
+//   database
+// * salt (random data) is appended to the hash password
+// * a higher salt value increases security
+// * to hash the password we use the hash method in which the first value is the password and the second value
+//   is the salt value
+// * we verify the hash password using the compare method in which the first value is the unhash password and
+//   the second value is the hash password
+
+
+//                                 --------------  QDOTENV  --------------
+// * dotenv ek external package jiska use environment variables ko manage krne ke liye kiya jata h(dotenv is an
+//   external package which is used to manage environment variables)
+// * sensitive data ko codebase se alg rkhne ke liye dotenv ka use krte h(dotenv is used to keep sensitive data
+//   separate from the codebase)
+// * .env file m environment variables ko define krte h jo ki sensitive data ko store rkhte h(environment 
+//   variables are defined in the .env file which stores sensitive data)
+// * process.env.variable_name se environment variable ko access krte h(environment variables are accessed from
+//   process.env.variable_name)
+// * dotenv se application ko more secure bnate h(dotenv makes the application more secure)
+
+
 // * const express = require("express") - import express framework for building web applications
 // * const cors = require("cors") - import cors middleware to enable cors
 // * const mongoose = require("mongoose") - import mongoosea to intract with mongodb
